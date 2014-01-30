@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load mezzanine_tags keyword_tags %}
+
+{% block meta_title %}{{ page.meta_title }}{% endblock %}
+
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+{% editable page.title %}{{ page.title }}{% endeditable %}
+{% endblock %}
+
+{% block main %}
+(this template is /home/www/hir/templates/pages/space.html)<br>
+{{ page.space.hackerspace }}<p>
+City: {{ page.space.city }}, {{ page.space.state }}<p>
+Country: {{ page.space.country }}<p>
+website: <a href="{{ page.space.website }}">{{ page.space.website }}</a><p>
+Description:<hr>
+{{ page.space.description }}
+<hr>
+Residency Opportunities: (if there is only one show it here, otherwise show a list of residencies)<br>
+
+{% endblock %}

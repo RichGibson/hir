@@ -1,0 +1,55 @@
+Early mezzanine notes
+
+-mkdir templates/ put index.html and whatever in there.
+
+Default templates for our install:
+/usr/local/lib/python2.7/dist-packages/mezzanine/core/templates/
+
+Copy those templates to project templates to replace them.
+
+There is a command which will copy all of the templates, but I'm
+not sure yet if that is a good idea. For now I think one at a time.
+tried doing it, not sure it is working :-/ rather, which tmeplate is being used.
+
+http://mezzanine.jupo.org/docs/frequently-asked-questions.html#where-are-all-the-templates-i-can-modify
+
+
+ python manage.py collecttemplates --help
+
+Adding/Editing a page type:
+edit models.py, see current example.
+
+Now working on residency and space models. in sqlite3 drop the current
+tables:
+(sqlite can't do migrations, but it is easy to use rather then postgres
+or mysql for now)
+sqlite> drop table hir_residency;
+sqlite> drop table hir_space;
+
+
+python ./manage.py schemamigration hir --initial
+python ./manage.py migrate hir
+
+
+ugh...
+to recreate the database:
+python manage.py createdb --noinput
+
+...
+I reran mezzanine-project hir
+-add hir to installed apps.
+uncomment mezzanine.accounts from installed pps
+
+python ./manage.py createsuperuser
+
+
+
+Add to github
+1. create repository on git hub
+2. mv current hir to hir_temp
+3. clone
+sudo git clone git://github.com/RichGibson/hir.git
+4. sudo chown -R richgibson:richgibson hir
+5. copy things back from hir_temp
+6. 
+

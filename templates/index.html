@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "HOME" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+(this template is /home/www/hir/templates/index.html)
+<h2>Hackers in Residence!</h2>
+<p>
+The Hackers in Residence site links cool people with cool places. Schools, universities, hackerspaces, arts communities, and other Organizations, can create a free web page to explain their Hackers In Residence Program which will attract potential Residents.
+</p>
+<ul>
+<li><a href="">(not ready) Spaces: create your organization page</a>
+<li><a href="">(not ready) Spaces: create a residency  page</a>
+<li><a href="">(not ready) Browse spaces</a>
+</ul>
+<hr>
+<li>
+
+<ul>
+
+<hr>
+Mezzanine tools - this section will be removed
+<ul>
+    <li><a href="/admin/">Log in to the admin interface</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}
