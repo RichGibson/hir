@@ -9,12 +9,14 @@ from mezzanine.pages.models import Page, RichText
 # case, date of birth.
 
 
-class Offer(models.Model):
-    """What is being offered to a resident?""""
+class OfferSkeleton(models.Model):
+    """What things can be offered to a resident?"""
     slug = models.CharField(max_length=80, blank=True, null=True, 
-                help_text="What is being offered. Ex 'Housing'")
+                help_text="What is being offered. as a slug Ex 'Travel expenses' becomes travel_expenses'")
+    label = models.CharField(max_length=80, blank=True, null=True, 
+                help_text="What is being offered. Readable prompt Ex 'Travel Expenses'")
     status = models.CharField(max_length=1, blank=True, null=True, default="N", 
-                help_text="Is it offered? Y(es), N(o), M(aybe/negotiable)"
+                help_text="Is it offered? Y(es), N(o), M(aybe/negotiable)")
     summary = models.CharField(max_length=80, blank=True, null=True, 
                 help_text="One line summary of what is being offered")
     notes = models.TextField(blank=True, null=True, 
@@ -22,12 +24,14 @@ class Offer(models.Model):
     sortorder = models.IntegerField(
                 help_text="sort order, Offer items are displayed in this order.")
 
-class Required(models.Model):
-    """What is being required from a resident?""""
+class RequiredSkeleton(models.Model):
+    """What can be required from a resident?"""
     slug = models.CharField(max_length=80, blank=True, null=True, 
-                help_text="What is required. Ex 'Give a Talk(s)'")
+                help_text="What is required as a slug Ex 'Give a Talk(s)' becomes 'give_a_talk' ")
+    label = models.CharField(max_length=80, blank=True, null=True, 
+                help_text="What is required. Readable prompt Ex 'Give a Talk(s)'")
     status = models.CharField(max_length=1, blank=True, null=True, default="N", 
-                help_text="Is it required? Y(es), N(o), M(aybe/negotiable)"
+                help_text="Is it required? Y(es), N(o), M(aybe/negotiable)")
     summary = models.CharField(max_length=80, blank=True, null=True, 
                 help_text="One line summary of what is required")
     notes = models.TextField(blank=True, null=True, 

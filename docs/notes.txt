@@ -26,13 +26,17 @@ or mysql for now)
 sqlite> drop table hir_residency;
 sqlite> drop table hir_space;
 
-
+South  migrations: this creates the initial migration.
 python ./manage.py schemamigration hir --initial
 python ./manage.py migrate hir
 
+After the initial migration do this:
+python ./manage.py schemamigration hir --auto 
+python ./manage.py migrate hir
 
 ugh...
 to recreate the database:
+Don't do this lightly!
 python manage.py createdb --noinput
 
 ...
@@ -51,5 +55,5 @@ Add to github
 sudo git clone git://github.com/RichGibson/hir.git
 4. sudo chown -R richgibson:richgibson hir
 5. copy things back from hir_temp
-6. 
+6.  git remote set-url origin git@github.com:RichGibson/hir.git
 
