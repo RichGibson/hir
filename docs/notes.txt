@@ -1,3 +1,61 @@
+
+Current:
+-create organization form
+-create residency form
+-figure out how to show formdata on a page
+-make the 'organization' page showing (noneditable) data from a form
+including the organization data, and (for now) all residencies attached
+to thatorganization.
+
+
+
+Now:
+fixed-do wording changes
+fixed-why do 144.77.17.54:8000 and pistonbot.com:8000 look different?
+fixed --pistonbot has the side bars with add org/residencie.
+-How to show formdata on a page:
+-show list of orgs
+-show list of residencies
+
+
+-page name at top left almost totally hidden?
+
+This has some tricks:
+https://groups.google.com/forum/#!topic/mezzanine-users/FvCUK9k1NRM
+
+This works:
+single_form = Form.objects.get(slug="organizationspace")
+formentry_list=FormEntry.objects.filter(form_id=single_form.id)
+label_list = [ ]
+field_list = Field.objects.filter(form_id=single_form.id)
+
+look at test.py:wq
+
+
+
+this does?
+single_form = Form.objects.all()
+
+This works
+pages=Page.objects.all()
+
+? I have different tables? WTF?
+
+I have different pages between pistonbot.com:8000 and 144.77.17.54:8000
+
+http://144.76.17.54:8000/admin/pages/page/
+http://pistonbot.com:8000/admin/pages/page/
+
+looking at log they both appear as requests with the same details except
+for the size of /admin/pages/page. 
+
+pages_page has a site_id. ah. Activated when I added pistonbot.com site.
+ugh!!!
+
+now I have a superset, a mess really.
+
+
+
 Early mezzanine notes
 
 -mkdir templates/ put index.html and whatever in there.
