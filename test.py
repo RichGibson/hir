@@ -31,3 +31,15 @@ for entry in entrylist:
 
 print entrylist
 
+"""
+Next steps...
+
+routine: pass a form name or slug, get a list of form_entry objects back? 
+
+put that in a view.
+
+
+
+
+
+"""
