@@ -115,3 +115,10 @@ sudo git clone git://github.com/RichGibson/hir.git
 5. copy things back from hir_temp
 6.  git remote set-url origin git@github.com:RichGibson/hir.git
 
+
+...
+Copy it to run on my laptop. 
+I had to do this:
+touch __init__.py
+Where is an init.py? Confused, oh well.
+
