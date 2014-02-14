@@ -19,7 +19,10 @@ urlpatterns = i18n_patterns("",
     ("^admin/", include(admin.site.urls)),
 )
 
+
 urlpatterns += patterns('',
+
+
 
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
@@ -31,6 +34,8 @@ urlpatterns += patterns('',
     # one homepage pattern, so if you use a different one, comment this
     # one out.
 
+    url(r'^list/(.*[^/])','hir.views.list', name='list'),
+    url(r'^rawlist/(.*[^/])','hir.views.rawlist', name='list'),
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
