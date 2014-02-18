@@ -140,3 +140,7 @@ FORMS_EXTRA_FIELDS= [ [42,'extra_fields.py','LABEL']]
 Look at 
 /usr/local/lib/python2.7/dist-packages/django/forms/fields.py for examples of the 
 'field_class'
+....
+Change name of page slug:
+update pages_page set slug='organization' where slug='organizationspace';
+
