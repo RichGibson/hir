@@ -122,3 +122,21 @@ I had to do this:
 touch __init__.py
 Where is an init.py? Confused, oh well.
 
+....
+Adding extra fields to a Form
+
+# Allow extra fields types to be defined via the FORMS_EXTRA_FIELDS
+# setting, which should contain a sequence of three-item sequences,
+# each containing the ID, dotted import path for the field class,
+# and field name, for each custom field type.
+# You get to make up the ID, but it can't conflict with 'CLASSES;
+# so pick well :-/
+# see mezzanine/forms/fields.py for the code where this setting is·
+# defined
+
+in settings.py
+FORMS_EXTRA_FIELDS= [ [42,'extra_fields.py','LABEL']]
+
+Look at 
+/usr/local/lib/python2.7/dist-packages/django/forms/fields.py for examples of the 
+'field_class'

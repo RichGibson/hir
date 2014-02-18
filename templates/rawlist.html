@@ -1,5 +1,10 @@
+{% load extras %}
 <h2>Raw list for form with slug: {{rv.slug}}</h2>
 {% for entry in entrylist %}
-    {{entry.value}}<br>
+    {{entry|get_item:'Name'}}
+    name?{{ entry.Name }}<br>
+    {% for field in entry %}
+        field: {{field}} {{field.name}}<br>
+    {% endfor %}
+    <hr>
 {% endfor %}
-<hr>

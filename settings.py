@@ -42,6 +42,18 @@ from __future__ import absolute_import, unicode_literals
 #     (3, "Footer", "pages/menus/footer.html"),
 # )
 
+# Allow extra fields types to be defined via the FORMS_EXTRA_FIELDS
+# setting, which should contain a sequence of three-item sequences,
+# each containing the ID, dotted import path for the field class,
+# and field name, for each custom field type.
+# You get to make up the ID, but it can't conflict with 'CLASSES;
+# so pick well :-/
+# see mezzanine/forms/fields.py for the code where this setting is 
+# defined
+
+#FORMS_EXTRA_FIELDS= [ [42,'extra_fields.py','LABEL']]
+
+#FORMS_EXTRA_FIELDS= [ [47,'extra_fields.py','Label'],[48,'extra_fields.py', 'separator']]
 # A sequence of fields that will be injected into Mezzanine's (or any
 # library's) models. Each item in the sequence is a four item sequence.
 # The first two items are the dotted path to the model and its field

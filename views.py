@@ -17,6 +17,7 @@ from mezzanine.forms.models import *
 
 import sys
 
+
 def return_formentry(slug):
     """ take a form slug, possibly other filter conditions, return form entry
         results.  """
@@ -52,6 +53,7 @@ def return_formentry(slug):
         fieldentry_list = FieldEntry.objects.filter(entry_id=formentry.id)
         for fieldentry in fieldentry_list:
             #entrylist.append(fieldentry)
+            #print fieldsByID[fieldentry.field_id] 
             entry[fieldsByID[fieldentry.field_id]] = fieldentry
         entrylist.append(entry)
 
@@ -59,7 +61,9 @@ def return_formentry(slug):
         #formentry['entrylist'] = entrylist
 
     for entry in entrylist:
-        print "%s: %s" % (fieldsByID[entry.field_id],entry.value)
+        for key,value in entry.items():
+            print key
+        #print "%s: %s" % (fieldsByID[entry.field_id],entry.value)
 
     #print entrylist
 
@@ -69,8 +73,6 @@ def return_formentry(slug):
     rv['entrylist']=entrylist
     return rv
 
-
-#form_slug = 'organizationspace'
 
 #for formentry in rv['formentry_list']:
 #    print formentry
