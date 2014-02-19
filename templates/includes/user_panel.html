@@ -1,0 +1,19 @@
+{% load mezzanine_tags %}
+{% ifinstalled mezzanine.accounts %}
+<div class="panel panel-default user-panel">
+<div class="panel-body">
+
+{% if not request.user.is_authenticated %}
+To add or manage an organization or residency opportunity:<br>
+{% endif %}
+
+{% include "accounts/includes/user_panel.html" %}
+
+{% if not request.user.is_authenticated %}
+<br>
+Login is not required to search for residencies.
+{% endif %}
+
+</div>
+</div>
+{% endifinstalled %}

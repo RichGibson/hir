@@ -1,5 +1,8 @@
 from __future__ import absolute_import, unicode_literals
 
+import sys 
+sys.path.append('/Users/richgibson/wa/hir')
+sys.path.append('/Users/richgibson/wa')
 ######################
 # MEZZANINE SETTINGS #
 ######################

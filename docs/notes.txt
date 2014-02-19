@@ -60,8 +60,11 @@ Early mezzanine notes
 
 -mkdir templates/ put index.html and whatever in there.
 
-Default templates for our install:
+Default templates for our install on ubunto:
+
 /usr/local/lib/python2.7/dist-packages/mezzanine/core/templates/
+and on osx
+/Library/Python/2.7/site-packages/mezzanine/core/templates
 
 Copy those templates to project templates to replace them.
 
@@ -143,4 +146,13 @@ Look at
 ....
 Change name of page slug:
 update pages_page set slug='organization' where slug='organizationspace';
+
+...........................................
+Change wording of login/signup block.
+1. Where is it?
+
+Inspect element in browser, it is class="panel... look for that in 
+base.html.
+might be includes/user_panel.html
+
 

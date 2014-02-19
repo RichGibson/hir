@@ -80,7 +80,8 @@
 </div>
 {% endif %}
 {% endnevercache %}
-
+<hr>
+<hr>
 <h1>{% block title %}{% endblock %}</h1>
 
 <ul class="breadcrumb">
@@ -106,17 +107,22 @@
 
 <div class="col-md-3 right">
     {% nevercache %}
+    <!-- user_panel includes the 'Log in or Sign up' links -->
     {% include "includes/user_panel.html" %}
     {% endnevercache %}
+
+    <!-- block below the log in panel, can include Twitter stream --> 
+    <!--
     <div class="panel panel-default">
-    <div class="panel-body">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
+        <div class="panel-body">
+            {% block right_panel %}
+                {% ifinstalled mezzanine.twitter %}
+                    {% include "twitter/tweets.html" %}
+                {% endifinstalled %}
+            {% endblock %}
+        </div>
     </div>
-    </div>
+    -->
 </div>
 
 </div>
