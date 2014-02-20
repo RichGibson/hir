@@ -1,10 +1,17 @@
 {% load extras %}
 <h2>Raw list for form with slug: {{rv.slug}}</h2>
+
+{% for entry in rv %}
+    Forms?
+    {{entry.slug}}
+    <hr>
+{% endfor %}
+
 {% for entry in entrylist %}
-    {{entry|get_item:'Name'}}
+    { {entry|get_item:'Name'} }
     name?{{ entry.Name }}<br>
     {% for field in entry %}
-        field: {{field}} {{field.name}}<br>
+        field: {{field}} name? {{field.name}} value? {{field.value}} <br>
     {% endfor %}
     <hr>
 {% endfor %}

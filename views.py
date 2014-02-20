@@ -53,8 +53,9 @@ def return_formentry(slug):
         fieldentry_list = FieldEntry.objects.filter(entry_id=formentry.id)
         for fieldentry in fieldentry_list:
             #entrylist.append(fieldentry)
-            #print fieldsByID[fieldentry.field_id] 
+            print >>sys.stderr,fieldsByID[fieldentry.field_id] 
             entry[fieldsByID[fieldentry.field_id]] = fieldentry
+            print >>sys.stderr,fieldentry
         entrylist.append(entry)
 
         #print type(formentry)
@@ -84,4 +85,6 @@ def list(request, slug=None):
 def rawlist(request, slug=None):
     
     rv = return_formentry(slug)
+    #rv = Form.objects.all()
+    #return render_to_response('rawlist.html', {'rv':rv, 'entrylist': None})
     return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrylist']})

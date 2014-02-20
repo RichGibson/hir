@@ -33,10 +33,12 @@ urlpatterns += patterns('',
     # commented out like the others, so it's the default. You only need
     # one homepage pattern, so if you use a different one, comment this
     # one out.
+    url("^$", direct_to_template, {"template": "index.html"}, name="home"),
 
     url(r'^list/(.*[^/])','hir.views.list', name='list'),
     url(r'^rawlist/(.*[^/])','hir.views.rawlist', name='list'),
-    url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+
+
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
