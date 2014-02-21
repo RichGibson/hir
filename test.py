@@ -118,17 +118,27 @@ def Xreturn_formentry(slug):
 
 
 
-form_slug = 'organizationspace'
+form_slug = 'organization'
 rv = return_formentry(form_slug)
 print "---------------------------"
 #print rv
 
+import pdb
 
+for field in rv['fieldsByID']:
+    print "field: %r" % field
+
+print "..............."
 for entry in rv['entrylist']:
     print "new space.............."
+    print "use fields by id"
+    pdb.set_trace()
+    print "entry.id: %i:" % entry.id
+
     for key,field in entry.items():
         #print key
-        print "%s: %s" % (key,field.value)
+        print "%s: %s " % (key,field.value)
+        print "What is in field? do we have slug?"
 
 """
 Next steps...

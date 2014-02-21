@@ -1,0 +1,9 @@
+Try to understand the models
+
+Mezzanine forms don't have a slug.
+
+Can I monkey patch Forms field?
+mezzanine.forms.models.Field
+
+Fuck it, try it.
+

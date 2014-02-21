@@ -85,6 +85,10 @@ def list(request, slug=None):
 def rawlist(request, slug=None):
     
     rv = return_formentry(slug)
+    for entry in rv['entrylist']:
+        print >>sys.stderr, "new space.............."
+        for key,field in entry.items():
+            print >>sys.stderr, "%s: %s" % (key,field.value)
     #rv = Form.objects.all()
     #return render_to_response('rawlist.html', {'rv':rv, 'entrylist': None})
     return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrylist']})
