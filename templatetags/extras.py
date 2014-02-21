@@ -16,9 +16,10 @@ def get_item(dictionary, key):
     for k in dictionary.keys():
         print >>sys.stderr, "k  :%s" % k
         print >>sys.stderr, "key:%s:" %key
-        print >>sys.stderr, dictionary[k].value
-        print >>sys.stderr, dictionary[key].value
+        #print >>sys.stderr, dictionary[k].value
+        #print >>sys.stderr, dictionary[key].value
         #print >>sys.stderr, dir(dictionary[k])
  
-    return dictionary[key].value
+    #return dictionary[key].value
+    return dictionary.get(key)
     #return dictionary.get(key).value

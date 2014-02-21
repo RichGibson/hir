@@ -4,6 +4,7 @@ import settings
 setup_environ(settings)
 
 from mezzanine.forms.models import *
+from mezzanine.utils.urls import admin_url, slugify, unique_slug
 import sys
 
 
@@ -28,94 +29,37 @@ def return_formentry(slug):
     field_list = Field.objects.filter(form_id=single_form.id)
     fieldsByID = {f.id:f for f in field_list}
 
-    #for field in field_list:
-    #    print field.id, field.label
-
-
-    for field in fieldsByID:
-        print "field_id: %r field: %r" % (field, fieldsByID[field] )
-        #print dir(fieldsByID[field])
+    #for field in fieldsByID:
+    #    print "field_id: %r field: %r" % (field, fieldsByID[field] )
 
     entrylist = [ ]
+    entrydictlist = [ ]
 
     # I want a list of formentries?
     # now I build a list of data entries
     for formentry in formentry_list:
-        #print dir(formentry)
         entry={} 
+        entrydict={} 
         fieldentry_list = FieldEntry.objects.filter(entry_id=formentry.id)
         for fieldentry in fieldentry_list:
-            #entrylist.append(fieldentry)
-            #print fieldsByID[fieldentry.field_id] 
+            fieldid =fieldentry.field_id
+            slug  = slugify(fieldsByID[fieldentry.field_id])
+            value =fieldentry.value
+            #print "try label:%s slug:%s value:%s " % (fieldsByID[fieldentry.field_id] , slug, fieldentry.value)
             entry[fieldsByID[fieldentry.field_id]] = fieldentry
+            entrydict[slug] = value
         entrylist.append(entry)
-
-        #print type(formentry)
-        #formentry['entrylist'] = entrylist
-
-    for entry in entrylist:
-        for key,value in entry.items():
-            print key
-        #print "%s: %s" % (fieldsByID[entry.field_id],entry.value)
-
-    #print entrylist
+        entrydictlist.append(entrydict)
 
     rv = {}
     rv['slug'] = slug
     rv['fieldsByID'] = fieldsByID
     rv['entrylist']=entrylist
+    rv['entrydictlist']=entrydictlist
     return rv
 
-
-#form_slug = 'organizationspace'
 
 ####
-
-def Xreturn_formentry(slug):
-    """ take a form slug, possibly other filter conditions, return form entry
-        results.  """
-
-    # A 'form' is the description and fields for a form.
-    print >>sys.stderr,"slug:%r" % slug
-    
-    single_form = Form.objects.get(slug=slug)
-
-    # A 'form entry' represents an instance of filling out a form.
-    # this formentry_list contains all of the filled out forms with the 
-    # passed in slug.
-    formentry_list=FormEntry.objects.filter(form_id=single_form.id)
-
-    label_list = [ ]
-    field_list = Field.objects.filter(form_id=single_form.id)
-    fieldsByID = {f.id:f for f in field_list}
-
-    #for field in field_list:
-    #    print field.id, field.label
-
-
-    for field in fieldsByID:
-        print "field_id: %r field: %r" % (field, fieldsByID[field] )
-        #print dir(fieldsByID[field])
-
-    entrylist = [ ]
-
-    # I want a list of formentries?
-    # now I build a list of data entries
-    for formentry in formentry_list:
-        #print dir(formentry)
-        fieldentry_list = FieldEntry.objects.filter(entry_id=formentry.id)
-        for fieldentry in fieldentry_list:
-            entrylist.append(fieldentry)
-
-    #for entry in entrylist:
-    #    print "%s: %s" % (fieldsByID[entry.field_id],entry.value)
-
-    rv = {}
-    rv['fieldsByID'] = fieldsByID
-    rv['entrylist']=entrylist
-    return rv
-
-
 
 
 form_slug = 'organization'
@@ -128,17 +72,27 @@ import pdb
 for field in rv['fieldsByID']:
     print "field: %r" % field
 
+
+for org in rv['entrydictlist']:
+    print "name:%s" % org['name']
+
+
+sys.exit(2)
+# wtf is an entry? Field: FieldEntry?
+# 
+
 print "..............."
 for entry in rv['entrylist']:
     print "new space.............."
     print "use fields by id"
-    pdb.set_trace()
-    print "entry.id: %i:" % entry.id
+    print type(entry)
+    #pdb.set_trace()
+    #print "entry.id: %i:" % entry['id']
 
     for key,field in entry.items():
         #print key
         print "%s: %s " % (key,field.value)
-        print "What is in field? do we have slug?"
+        print "label? %s" (field.label)
 
 """
 Next steps...

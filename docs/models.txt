@@ -6,4 +6,14 @@ Can I monkey patch Forms field?
 mezzanine.forms.models.Field
 
 Fuck it, try it.
+It probably will work, but I don't yet have it. oh well.
+
+What to I want?
+to map the contents of a form to a dictionary keyed 
+on something I can use.
+
+ie. slugs :-/
+
+so FieldSlug model?
+id, fieldID, slug
 

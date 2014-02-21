@@ -13,6 +13,7 @@ from django.template import RequestContext
 #setup_environ(settings)
 
 from mezzanine.forms.models import *
+from mezzanine.utils.urls import admin_url, slugify, unique_slug
 
 
 import sys
@@ -35,60 +36,45 @@ def return_formentry(slug):
     field_list = Field.objects.filter(form_id=single_form.id)
     fieldsByID = {f.id:f for f in field_list}
 
-    #for field in field_list:
-    #    print field.id, field.label
-
-
-    for field in fieldsByID:
-        print "field_id: %r field: %r" % (field, fieldsByID[field] )
-        #print dir(fieldsByID[field])
+    #for field in fieldsByID:
+    #    print "field_id: %r field: %r" % (field, fieldsByID[field] )
 
     entrylist = [ ]
+    entrydictlist = [ ]
 
     # I want a list of formentries?
     # now I build a list of data entries
     for formentry in formentry_list:
-        #print dir(formentry)
         entry={} 
+        entrydict={} 
         fieldentry_list = FieldEntry.objects.filter(entry_id=formentry.id)
         for fieldentry in fieldentry_list:
-            #entrylist.append(fieldentry)
-            print >>sys.stderr,fieldsByID[fieldentry.field_id] 
+            fieldid =fieldentry.field_id
+            slug  = slugify(fieldsByID[fieldentry.field_id])
+            value =fieldentry.value
+            #print "try label:%s slug:%s value:%s " % (fieldsByID[fieldentry.field_id] , slug, fieldentry.value)
             entry[fieldsByID[fieldentry.field_id]] = fieldentry
-            print >>sys.stderr,fieldentry
+            entrydict[slug] = value
         entrylist.append(entry)
-
-        #print type(formentry)
-        #formentry['entrylist'] = entrylist
-
-    for entry in entrylist:
-        for key,value in entry.items():
-            print key
-        #print "%s: %s" % (fieldsByID[entry.field_id],entry.value)
-
-    #print entrylist
+        entrydictlist.append(entrydict)
 
     rv = {}
     rv['slug'] = slug
     rv['fieldsByID'] = fieldsByID
     rv['entrylist']=entrylist
+    rv['entrydictlist']=entrydictlist
     return rv
-
-
-#for formentry in rv['formentry_list']:
-#    print formentry
 
 def list(request, slug=None):
     rv = return_formentry(slug)
     return render_to_response('list.html', {'rv':rv, 'entrylist': rv['entrylist']})
 
 def rawlist(request, slug=None):
-    
     rv = return_formentry(slug)
-    for entry in rv['entrylist']:
-        print >>sys.stderr, "new space.............."
-        for key,field in entry.items():
-            print >>sys.stderr, "%s: %s" % (key,field.value)
+    for entry in rv['entrydictlist']:
+        print >>sys.stderr, "%s" % (entry['name'])
+        #for key,field in entry.items():
+        #    print >>sys.stderr, "%s: %s" % (key,field.value)
     #rv = Form.objects.all()
     #return render_to_response('rawlist.html', {'rv':rv, 'entrylist': None})
-    return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrylist']})
+    return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrydictlist']})
