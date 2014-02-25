@@ -39,16 +39,72 @@ class RequiredSkeleton(models.Model):
     sortorder = models.IntegerField(
                 help_text="sort order, Required items are displayed in this order.")
 
-class Residency(Page, RichText):
-    offer= models.TextField()
-    resources= models.TextField()
 
-# follow layout of the hackerspaces.org wiki for now
-class Space(Page, RichText):
+class Organization(Page, RichText):
     name = models.CharField(max_length=200)
-    hackerspace = models.CharField(max_length=200)
-    city = models.CharField(max_length=30)
-    state = models.CharField(max_length=30)
-    country = models.CharField(max_length=30)
-    website = models.CharField(max_length=100)
+    website = models.CharField(max_length=100, blank=True, null=True,)
+    street_address = models.CharField(max_length=200, blank=True, null=True,)
+    city = models.CharField(max_length=30, blank=True, null=True,)
+    state = models.CharField(max_length=30, blank=True, null=True,)
+    postal_code = models.CharField(max_length=30, blank=True, null=True,)
+    country = models.CharField(max_length=30, blank=True, null=True,)
+    email = models.CharField(max_length=30)
+    phone = models.CharField(max_length=30, blank=True, null=True,)
+    about = models.TextField(blank=True, null=True,)
+
+
+
+class Residency(Page, RichText):
+    organization = models.ForeignKey("Organization", default=17)
+    # we get 'title' from the base Page, to use as a summary of the opportunity for list views.
+    about = models.TextField(blank=True, null=True)
+    application_instructions = models.TextField(blank=True, null=True)
+
+    offer_travel_check = models.BooleanField(default=None)
+    offer_travel_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_housing_check = models.BooleanField(default=None)
+    offer_housing_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_food_check = models.BooleanField(default=None)
+    offer_food_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_stipend_check = models.BooleanField(default=None)
+    offer_stipend_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_studio_check = models.BooleanField(default=None)
+    offer_studio_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_tools_check = models.BooleanField(default=None)
+    offer_tools_detail=models.CharField(max_length=120, blank=True, null=True)
+
+    offer_additional_detail = models.TextField(blank=True, null=True)
+
+    require_language = models.CharField(max_length=120, blank=True, null=True)
+
+    require_start_date = models.DateField(blank=True, null=True, help_text="Earliest date the residency can start")
+    require_end_date   = models.DateField(blank=True, null=True, help_text="Latest date the residency can end")
+    require_minimum_stay = models.CharField(max_length=120, blank=True, null=True, help_text="Minimum required length of stay")
+    require_maximum_stay = models.CharField(max_length=120, blank=True, null=True, help_text="Minimum required length of stay")
+    require_date_detail = models.TextField(blank=True, null=True)
+
+    require_mentoring_check  = models.BooleanField(default=None)
+    require_mentoring_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_talk_check  = models.BooleanField(default=None)
+    require_talk_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_workshop_check  = models.BooleanField(default=None)
+    require_workshop_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_presentation_check  = models.BooleanField(default=None)
+    require_presentation_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_class_check  = models.BooleanField(default=None)
+    require_class_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_hackathon_check  = models.BooleanField(default=None)
+    require_hackathon_detail =models.CharField(max_length=120, blank=True, null=True)
+
+    require_other_requirements = models.TextField(blank=True, null=True)
 

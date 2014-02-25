@@ -78,3 +78,9 @@ def rawlist(request, slug=None):
     #rv = Form.objects.all()
     #return render_to_response('rawlist.html', {'rv':rv, 'entrylist': None})
     return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrydictlist']})
+
+def organization(request, organization=None):
+    rv = Pages.objects.all()
+    print >>sys.stderr,"organization, name: ", organization
+    #return render_to_response('pages/show_organization.html', {'rv':rv})
+    return render_to_response('pages/show_organization.html')

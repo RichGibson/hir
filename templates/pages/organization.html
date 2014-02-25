@@ -1,36 +1,70 @@
-{% extends "pages/page.html" %}
+{% extends "base.html" %}
+{% load mezzanine_tags keyword_tags %}
 
-{% load mezzanine_tags %}
+{% block meta_title %}{{ page.meta_title }}{% endblock %}
 
-{% block extra_js %}
-{{ block.super }}
-<script>
-$(function() {$('.mezzanine-form :input:visible:enabled:first').focus();});
-</script>
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{{ page.description }}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+{% editable page.title %}{{ page.title }}{% endeditable %}
 {% endblock %}
 
 {% block main %}
-{{ block.super }}
-{% if request.GET.sent %}
-    {% editable page.form.response %}
-    {{ page.form.response|richtext_filters|safe }}
-    {% endeditable %}
-{% else %}
-    {% with page.form as page_form %}
-    {% editable page_form.content %}
-    {{ page_form.content|richtext_filters|safe }}
-    {% endeditable %}
-    {% endwith %}
+<label class="control-label">Name:</label>
+{{ page.organization.name }}<br>
 
-    {% errors_for form %}
-     
-    <form class="mezzanine-form" method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
-        {% fields_for form %}
-        <div class="form-actions">
-            <input class="btn btn-primary btn-lg" type="submit" value="{{ page.form.button_text }}">
-        </div>
-    </form>
+<label class="control-label">Website:</label>
+{{ page.organization.website }}<br>
+
+<label class="control-label">Street Address:</label>
+{{ page.organization.street_address }}<br>
+
+<label class="control-label">City:</label>
+{{ page.organization.city }} 
+
+<label class="control-label">State:</label>
+{{ page.organization.state}} 
+
+<label class="control-label">Postal Code:</label>
+{{ page.organization.postal_code}}<br>
+
+<label class="control-label">Country:</label>
+{{ page.organization.country}}<br>
+
+<label class="control-label">Contact email:</label>
+{{ page.organization.email}} 
+
+<label class="control-label">Contact phone:</label>
+{{ page.organization.phone}}<br>
+
+<label class="control-label">About our organization:</label>
+{{ page.organization.about }}
+
+
+<hr>
+{% if not request.user.is_authenticated %}
+{% include "accounts/includes/user_panel.html" %}
+to add a residency opportunity
 {% endif %}
 
-{% endblock %}
+{% if request.user.is_authenticated %}
+<a href="">Add a residency opportunity!</a>
+{% endif %}
 
+<hr>
+<h2>Our residency opportunities</h2>
+{% for res in reslist %}
+    {{res.title}}<Br>
+{% endfor %}
+
+{% endblock %}

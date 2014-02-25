@@ -38,6 +38,8 @@ urlpatterns += patterns('',
     url(r'^list/(.*[^/])','hir.views.list', name='list'),
     url(r'^rawlist/(.*[^/])','hir.views.rawlist', name='list'),
 
+    url(r'^organization/(.*[^/])?','hir.views.organization', name='list'),
+
 
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
