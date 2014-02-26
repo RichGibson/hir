@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load mezzanine_tags keyword_tags %}
+{% load extras %}
 
 {% block meta_title %}{{ page.meta_title }}{% endblock %}
 
@@ -32,8 +33,9 @@
 <label class="control-label">Application Instructions:</label>
 {{ page.residency.application_instructions }}<br>
 
+
 <label class="control-label">Travel Expenses:</label>
-<input type="checkbox" value="{{ page.residency.offer_travel_check}}">
+<input type="checkbox" disabled {% if page.residency.offer_travel_check %} checked {% endif %}}">
 {{ page.residency.offer_travel_detail}}
 <br>
 
