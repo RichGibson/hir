@@ -33,36 +33,13 @@
 <label class="control-label">Application Instructions:</label>
 {{ page.residency.application_instructions }}<br>
 
+{% check_magic "Travel Expenses:" page.residency.offer_travel_check page.residency.offer_travel_detail  %}
+{% check_magic "Housing:" page.residency.offer_housing_check page.residency.offer_housing_detail  %}
+{% check_magic "Food:" page.residency.offer_food_check       page.residency.offer_food_detail  %}
+{% check_magic "Stipend:" page.residency.offer_stipend_check page.residency.offer_stipend_detail  %}
+{% check_magic "Studio:" page.residency.offer_studio_check page.residency.offer_studio_detail  %}
+{% check_magic "Tools:" page.residency.offer_tools_check page.residency.offer_tools_detail  %}
 
-<label class="control-label">Travel Expenses:</label>
-<input type="checkbox" disabled {% if page.residency.offer_travel_check %} checked {% endif %}}">
-{{ page.residency.offer_travel_detail}}
-<br>
-
-<label class="control-label">Housing:</label>
-<input type="checkbox" value="{{ page.residency.offer_housing_check}}">
-{{ page.residency.offer_housing_detail}}
-<br>
-
-<label class="control-label">Food:</label>
-<input type="checkbox" value="{{ page.residency.offer_food_check}}">
-{{ page.residency.offer_food_detail}}
-<br>
-
-<label class="control-label">Stipend:</label>
-<input type="checkbox" value="{{ page.residency.offer_stipend_check}}">
-{{ page.residency.offer_stipend_detail}}
-<br>
-
-<label class="control-label">Studio:</label>
-<input type="checkbox" value="{{ page.residency.offer_studio_check}}">
-{{ page.residency.offer_studio_detail}}
-<br>
-
-<label class="control-label">Tools:</label>
-<input type="checkbox" value="{{ page.residency.offer_tools_check}}">
-{{ page.residency.offer_tools_detail}}
-<br>
 
 <label class="control-label">Additional offer details:</label>
 {{ page.residency.offer_additional_details}}
@@ -75,36 +52,12 @@
 
 (date requirements)<br>
 
-<label class="control-label">Mentoring:</label>
-<input type="checkbox" value="{{ page.residency.require_mentoring_check}}">
-{{ page.residency.require_mentoring_detail}}
-<br>
-<label class="control-label">Talk:</label>
-<input type="checkbox" value="{{ page.residency.require_talk_check}}">
-{{ page.residency.require_talk_detail}}
-<br>
-
-<label class="control-label">Workshop:</label>
-<input type="checkbox" value="{{ page.residency.require_workshop_check}}">
-{{ page.residency.require_workshop_detail}}
-<br>
-
-
-<label class="control-label">Presentation:</label>
-<input type="checkbox" value="{{ page.residency.require_presentation_check}}">
-{{ page.residency.require_presentation_detail}}
-<br>
-
-
-<label class="control-label">Class:</label>
-<input type="checkbox" value="{{ page.residency.require_class_check}}">
-{{ page.residency.require_class_detail}}
-<br>
-
-<label class="control-label">Hackathon:</label>
-<input type="checkbox" value="{{ page.residency.require_hackathon_check}}">
-{{ page.residency.require_hackathon_detail}}
-<br>
+{% check_magic "Mentoring:" page.residency.offer_mentoring_check page.residency.offer_mentoring_detail  %}
+{% check_magic "Talk:" page.residency.offer_talk_check page.residency.offer_talk_detail  %}
+{% check_magic "Workshop:" page.residency.offer_workshop_check page.residency.offer_workshop_detail  %}
+{% check_magic "Presentation:" page.residency.offer_presentation_check page.residency.offer_presentation_detail  %}
+{% check_magic "Class:" page.residency.offer_class_check page.residency.offer_class_detail  %}
+{% check_magic "Hackathon:" page.residency.offer_hackathon_check page.residency.offer_hackathon_detail  %}
 
 <hr>
 {% if not request.user.is_authenticated %}
