@@ -156,3 +156,18 @@ base.html.
 might be includes/user_panel.html
 
 
+....
+Deployment notes
+/etc/apache2/sites-available/hir.conf (started with a skeleton of an existing site)
+
+python ./manage.py collectstatic
+edit wsgi.py
+sudo a2ensite hir.conf 
+yay internal server error.
+That means something is happening.
+
+And then dork with a sys.path.append in settings, which seems unneeded/wrong, but works :-/
+-set DEBUG to false
+django_site - seems like it should be www.hackerinresidence.org, but then my pages don't show up :-/
+
+

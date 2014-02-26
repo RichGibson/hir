@@ -63,8 +63,15 @@ If this is your organizations and you'd like to add a residency opportunity.
 
 <hr>
 <h2>Our residency opportunities</h2>
+
+{% if page.organization.city or page.organization.country %}
+    Come visit and create with us in {{page.organization.city}} {{page.organization.country}}<br>
+{% endif %}
+
+<ul>
 {% for res in reslist %}
-    <a href="/{{res.slug}}">{{res.title}}</a><Br>
+    <li><a href="/{{res.slug}}">{{res.title}}</a>
 {% endfor %}
+</ul>
 
 {% endblock %}
