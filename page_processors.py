@@ -13,6 +13,11 @@ def organization_display(request, page):
     reslist = Residency.objects.all()
     return {"reslist": reslist}
 
+@processor_for('list-of-organizations')
+def organization_list(request,page):
+    orglist = Organization.objects.all()
+    return {"orglist": orglist}
+
 @processor_for('list-of-residencies')
 def residency_list(request,page):
     reslist = Residency.objects.all()
