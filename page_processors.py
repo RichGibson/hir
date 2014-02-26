@@ -13,6 +13,10 @@ def organization_display(request, page):
     reslist = Residency.objects.all()
     return {"reslist": reslist}
 
+@processor_for('list-of-residencies')
+def residency_list(request,page):
+    reslist = Residency.objects.all()
+    return {"reslist": reslist}
 
 #### this is from the docs.http://mezzanine.jupo.org/docs/content-architecture.html
 #### basically exactly what I need :-/

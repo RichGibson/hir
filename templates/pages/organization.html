@@ -64,7 +64,7 @@ to add a residency opportunity
 <hr>
 <h2>Our residency opportunities</h2>
 {% for res in reslist %}
-    {{res.title}}<Br>
+    <a href="/{{res.slug}}">{{res.title}}</a><Br>
 {% endfor %}
 
 {% endblock %}
