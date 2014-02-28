@@ -5,10 +5,11 @@ import sys
 #sys.path.append('/Users/richgibson/wa')
 sys.path.append('/home/www/hir')
 sys.path.append('/home/www')
+
+# I can't get fixtures to work within the test caseFIXTURE_DIRS=['fixtures/']
 ######################
 # MEZZANINE SETTINGS #
 ######################
-
 # The following settings are already defined with default values in
 # the ``defaults.py`` module within each of Mezzanine's apps, but are
 # common enough to be put here, commented out, for convenient

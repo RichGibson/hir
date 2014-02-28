@@ -170,4 +170,20 @@ And then dork with a sys.path.append in settings, which seems unneeded/wrong, bu
 -set DEBUG to false
 django_site - seems like it should be www.hackerinresidence.org, but then my pages don't show up :-/
 
+.....
+for test fixtures to work.
+pip install pyyaml
+
+to make my fixture: 
+python ./manage.py dumpdata hir --format=yaml --indent=4 > fixtures/hir.yaml
+
+This copies everything in the database, might matter for some things to have this
+python ./manage.py dumpdata  --format=yaml --indent=4 > fixtures/all.yaml
+
+....
+Testing/fixture 'fun'
+This works
+python ./manage.py loaddata fixtures/hir.json 
+
+But having fixtures = ['hir.json'] in my test class doesn't work.
 

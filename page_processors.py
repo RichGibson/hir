@@ -2,14 +2,38 @@
 #from django.http import HttpResponseRedirect
 
 import sys
+
+from django import forms
+from django.forms import ModelForm
+from django.http import HttpResponseRedirect
+
 from mezzanine.pages.page_processors import processor_for
 from .models import Organization, Residency
 
-#class AuthorForm(forms.Form):
-    #name = forms.CharField()
-    #email = forms.EmailField()
+
+class OrganizationForm(ModelForm):
+    class Meta:
+        model = Organization
+        fields=['name', 'website', 'street_address', 'city', 'state',
+                'postal_code', 'country', 'email', 'phone', 'about']
+
+
 
 @processor_for(Organization)
+def organization_form(request, page):
+    print >>sys.stderr, "in organization_form"
+    orgform = OrganizationForm()
+    if request.method == "POST":
+        orgform = OrganizationForm(request.POST)
+        if orgform.is_valid():
+            # process form, like save data
+            orgform.save()
+            redirect = request.path + "?submitted=true"
+            return HttpResponseRedirect(redirect)
+    return {"orgform": orgform}
+
+
+#XXXprocessor_for(Organization)
 def organization_display(request, page):
     reslist = Residency.objects.filter(organization=page.id)
     return {"reslist": reslist}

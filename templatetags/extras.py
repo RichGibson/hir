@@ -23,7 +23,8 @@ def check_magic(label, check, detail=None):
     else:
         c=""
 
-    st = """<label class="control-label">%s</label> n/a<br>""" % label
+    st = ""
+    #st = """<label class="control-label">%s</label> n/a<br>""" % label
     if check is True or detail:
         st = """ 
         <label class="control-label">%s</label>

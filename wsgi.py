@@ -6,7 +6,7 @@ sys.path.append("/home/www/hir")
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 settings_module = "%s.settings" % PROJECT_ROOT.split(os.sep)[-1]
-print "settings_module:",settings_module
+#print "settings_module:",settings_module
 settings_module='settings'
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", settings_module)
 

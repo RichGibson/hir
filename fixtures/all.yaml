@@ -1,0 +1,2300 @@
+-   fields: {app_label: auth, model: permission, name: permission}
+    model: contenttypes.contenttype
+    pk: 1
+-   fields: {app_label: auth, model: group, name: group}
+    model: contenttypes.contenttype
+    pk: 2
+-   fields: {app_label: auth, model: user, name: user}
+    model: contenttypes.contenttype
+    pk: 3
+-   fields: {app_label: contenttypes, model: contenttype, name: content type}
+    model: contenttypes.contenttype
+    pk: 4
+-   fields: {app_label: redirects, model: redirect, name: redirect}
+    model: contenttypes.contenttype
+    pk: 5
+-   fields: {app_label: sessions, model: session, name: session}
+    model: contenttypes.contenttype
+    pk: 6
+-   fields: {app_label: sites, model: site, name: site}
+    model: contenttypes.contenttype
+    pk: 7
+-   fields: {app_label: conf, model: setting, name: Setting}
+    model: contenttypes.contenttype
+    pk: 8
+-   fields: {app_label: core, model: sitepermission, name: Site permission}
+    model: contenttypes.contenttype
+    pk: 9
+-   fields: {app_label: generic, model: threadedcomment, name: Comment}
+    model: contenttypes.contenttype
+    pk: 10
+-   fields: {app_label: generic, model: keyword, name: Keyword}
+    model: contenttypes.contenttype
+    pk: 11
+-   fields: {app_label: generic, model: assignedkeyword, name: assigned keyword}
+    model: contenttypes.contenttype
+    pk: 12
+-   fields: {app_label: generic, model: rating, name: Rating}
+    model: contenttypes.contenttype
+    pk: 13
+-   fields: {app_label: blog, model: blogpost, name: Blog post}
+    model: contenttypes.contenttype
+    pk: 14
+-   fields: {app_label: blog, model: blogcategory, name: Blog Category}
+    model: contenttypes.contenttype
+    pk: 15
+-   fields: {app_label: forms, model: form, name: Form}
+    model: contenttypes.contenttype
+    pk: 16
+-   fields: {app_label: forms, model: field, name: Field}
+    model: contenttypes.contenttype
+    pk: 17
+-   fields: {app_label: forms, model: formentry, name: Form entry}
+    model: contenttypes.contenttype
+    pk: 18
+-   fields: {app_label: forms, model: fieldentry, name: Form field entry}
+    model: contenttypes.contenttype
+    pk: 19
+-   fields: {app_label: pages, model: page, name: Page}
+    model: contenttypes.contenttype
+    pk: 20
+-   fields: {app_label: pages, model: richtextpage, name: Rich text page}
+    model: contenttypes.contenttype
+    pk: 21
+-   fields: {app_label: pages, model: link, name: Link}
+    model: contenttypes.contenttype
+    pk: 22
+-   fields: {app_label: galleries, model: gallery, name: Gallery}
+    model: contenttypes.contenttype
+    pk: 23
+-   fields: {app_label: galleries, model: galleryimage, name: Image}
+    model: contenttypes.contenttype
+    pk: 24
+-   fields: {app_label: twitter, model: query, name: Twitter query}
+    model: contenttypes.contenttype
+    pk: 25
+-   fields: {app_label: twitter, model: tweet, name: Tweet}
+    model: contenttypes.contenttype
+    pk: 26
+-   fields: {app_label: south, model: migrationhistory, name: migration history}
+    model: contenttypes.contenttype
+    pk: 27
+-   fields: {app_label: admin, model: logentry, name: log entry}
+    model: contenttypes.contenttype
+    pk: 28
+-   fields: {app_label: comments, model: comment, name: comment}
+    model: contenttypes.contenttype
+    pk: 29
+-   fields: {app_label: comments, model: commentflag, name: comment flag}
+    model: contenttypes.contenttype
+    pk: 30
+-   fields: {app_label: hir, model: residency, name: residency}
+    model: contenttypes.contenttype
+    pk: 32
+-   fields: {app_label: hir, model: offerskeleton, name: offer skeleton}
+    model: contenttypes.contenttype
+    pk: 35
+-   fields: {app_label: hir, model: requiredskeleton, name: required skeleton}
+    model: contenttypes.contenttype
+    pk: 36
+-   fields: {app_label: hir, model: organization, name: organization}
+    model: contenttypes.contenttype
+    pk: 37
+-   fields: {expire_date: !!timestamp '2014-02-21 19:37:37.565533+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: 04okzsnopzwzx44xk7sm0ufes8a99ne6
+-   fields: {expire_date: !!timestamp '2014-03-06 03:39:14.250530+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: 1w5f35oxrd0n58j9102tea1j3fre3bef
+-   fields: {expire_date: !!timestamp '2014-02-26 20:50:08.744406+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: 2hct2htsoackgoczgilnqxz7lsneba2p
+-   fields: {expire_date: !!timestamp '2014-03-07 19:57:43.318332+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: 2lflur2qekjd3bq4wqf2h1e7hgw05ryz
+-   fields: {expire_date: !!timestamp '2014-03-07 20:25:23.736176+00:00', session_data: MjI5ZWYzYzU5NGQzZTM2YTY3YzlkZDM4ZDY3NTlhMzI1ZWFlYjllMjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwR1Lg==}
+    model: sessions.session
+    pk: 2psiivk70bgfdapbjbv1tsogrr2c14e3
+-   fields: {expire_date: !!timestamp '2014-03-07 21:06:44.872355+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: 3d61rze0ori82mfpma2efqd2gpg0kklt
+-   fields: {expire_date: !!timestamp '2014-03-12 05:00:38.580436+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: 561zb0azdh8ml4015bc5thlfwsx58wkt
+-   fields: {expire_date: !!timestamp '2014-02-24 17:25:52.373725+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: 5mfoo3wnz78qscayc5xjpihawkg5r5tq
+-   fields: {expire_date: !!timestamp '2014-03-07 19:58:12.207733+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: 81ixauzq4sg1kurgesn7iy5qbjuxvxl5
+-   fields: {expire_date: !!timestamp '2014-02-28 01:26:51.874177+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: 8auz5osind2xq0sll9el09f232m5i2hj
+-   fields: {expire_date: !!timestamp '2014-02-17 22:29:58.140017+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: 9kbuow2pd3fmx3k8uoqi4hil3b11x7ay
+-   fields: {expire_date: !!timestamp '2014-02-26 20:49:04.060319+00:00', session_data: YjI0Zjg0NjI2OTRjYjRiNDQxMzU0Y2RjOTAyMmY4MzkwZjYyOTJhNjqAAn1xAVgKAAAAdGVzdGNvb2tpZXECWAYAAAB3b3JrZWRxA3Mu}
+    model: sessions.session
+    pk: cql0ehrcc3akukk6zu1dm1yxopk4sc6e
+-   fields: {expire_date: !!timestamp '2014-03-11 20:42:00.336664+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: e52ytjxrurevjkb6umf6twqieh4azr5l
+-   fields: {expire_date: !!timestamp '2014-02-10 21:02:53.960182+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: ecjc09nn0yz4fhoy6eq4f0lv0tduzx2b
+-   fields: {expire_date: !!timestamp '2014-03-07 19:58:06.066227+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: grl1b5gmtxxuxjhy3xjr5j4v0clc8vr0
+-   fields: {expire_date: !!timestamp '2014-03-12 18:09:47.450041+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: gzaz7pef8srf823ixc66os3d1zskves2
+-   fields: {expire_date: !!timestamp '2014-03-11 23:23:09.471748+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: i4t33ho56265v1c33co92gxur3mgs39d
+-   fields: {expire_date: !!timestamp '2014-02-26 23:36:51.512341+00:00', session_data: YjI0Zjg0NjI2OTRjYjRiNDQxMzU0Y2RjOTAyMmY4MzkwZjYyOTJhNjqAAn1xAVgKAAAAdGVzdGNvb2tpZXECWAYAAAB3b3JrZWRxA3Mu}
+    model: sessions.session
+    pk: irql02egyfo69069whzz3av6df3zj8go
+-   fields: {expire_date: !!timestamp '2014-02-28 23:25:25.575840+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: jcl9kgswxk0nnbgiopobicnaktis8djp
+-   fields: {expire_date: !!timestamp '2014-02-10 21:43:47.728858+00:00', session_data: MjI5ZWYzYzU5NGQzZTM2YTY3YzlkZDM4ZDY3NTlhMzI1ZWFlYjllMjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwR1Lg==}
+    model: sessions.session
+    pk: lse1p5w4h46wkntomhb63c75coria7n9
+-   fields: {expire_date: !!timestamp '2014-02-10 21:42:47.159108+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: ne2fucr1bbl596o99oobuef8c4nun94i
+-   fields: {expire_date: !!timestamp '2014-02-13 21:07:22.393799+00:00', session_data: MjI5ZWYzYzU5NGQzZTM2YTY3YzlkZDM4ZDY3NTlhMzI1ZWFlYjllMjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwR1Lg==}
+    model: sessions.session
+    pk: ottcmqvna5b6ljctxgep9th8c9ie31zu
+-   fields: {expire_date: !!timestamp '2014-02-27 08:12:29.261317+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: p9w9174prc8gd9d3roe2ky4a6flb0uym
+-   fields: {expire_date: !!timestamp '2014-02-15 19:29:28.022642+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: ucbqnbn6nl2ejjc6172hkf2cpuk2iryb
+-   fields: {expire_date: !!timestamp '2014-02-21 19:37:52.641818+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: uqc1nkgmjy36861nupf5lyakwx550s6m
+-   fields: {expire_date: !!timestamp '2014-02-17 19:36:25.222735+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: v2kzs88zsa3vdb6kumjqt49n4il30pjh
+-   fields: {expire_date: !!timestamp '2014-03-07 20:39:56.342640+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: v9d6ks3u69aa77m686axwx7qjv2df18s
+-   fields: {expire_date: !!timestamp '2014-03-04 16:41:26.589573+00:00', session_data: ZjA5MWE1YjQ2Yjc5OTYwOGM1OGYzMmFkNzM1ZDVhYTUxNDM2MDg1MzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwJ1Lg==}
+    model: sessions.session
+    pk: vaindlwhvp9dllmc61ecxam759tyjin9
+-   fields: {expire_date: !!timestamp '2014-03-10 02:10:44.686361+00:00', session_data: MjI5ZWYzYzU5NGQzZTM2YTY3YzlkZDM4ZDY3NTlhMzI1ZWFlYjllMjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwR1Lg==}
+    model: sessions.session
+    pk: vualp5hsip3lym9omxa80vkikoginpyz
+-   fields: {expire_date: !!timestamp '2014-03-12 04:58:18.335621+00:00', session_data: YjA4NGNmNTczZWVjZTZlMDQ1NDUwNWE0YTRjNzI0M2RkZWRkZWMwZDqAAn1xAS4=}
+    model: sessions.session
+    pk: xkf56nv9cjdr41qimzw0m8ssha6mcnbz
+-   fields: {expire_date: !!timestamp '2014-02-28 23:34:14.788579+00:00', session_data: MjI5ZWYzYzU5NGQzZTM2YTY3YzlkZDM4ZDY3NTlhMzI1ZWFlYjllMjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVS1tZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwR1Lg==}
+    model: sessions.session
+    pk: zx1q9pi4duhaht62zos52ew19xmmzfzs
+-   fields: {domain: '127.0.0.1:8000', name: Default}
+    model: sites.site
+    pk: 1
+-   fields: {name: GOOGLE_ANALYTICS_ID, site: 1, value: ''}
+    model: conf.setting
+    pk: 1
+-   fields: {name: SEARCH_PER_PAGE, site: 1, value: '10'}
+    model: conf.setting
+    pk: 2
+-   fields: {name: COMMENTS_NUM_LATEST, site: 1, value: '5'}
+    model: conf.setting
+    pk: 3
+-   fields: {name: ACCOUNTS_APPROVAL_EMAILS, site: 1, value: rich.gibson@gmail.com}
+    model: conf.setting
+    pk: 4
+-   fields: {name: RICHTEXT_FILTER_LEVEL, site: 1, value: '1'}
+    model: conf.setting
+    pk: 5
+-   fields: {name: TWITTER_CONSUMER_SECRET, site: 1, value: ''}
+    model: conf.setting
+    pk: 6
+-   fields: {name: COMMENTS_UNAPPROVED_VISIBLE, site: 1, value: 'True'}
+    model: conf.setting
+    pk: 7
+-   fields: {name: SITE_TAGLINE, site: 1, value: Connecting Hackers and Organizations}
+    model: conf.setting
+    pk: 8
+-   fields: {name: TWITTER_DEFAULT_QUERY_TYPE, site: 1, value: search}
+    model: conf.setting
+    pk: 9
+-   fields: {name: COMMENTS_REMOVED_VISIBLE, site: 1, value: 'True'}
+    model: conf.setting
+    pk: 10
+-   fields: {name: TWITTER_DEFAULT_NUM_TWEETS, site: 1, value: '3'}
+    model: conf.setting
+    pk: 11
+-   fields: {name: BITLY_ACCESS_TOKEN, site: 1, value: ''}
+    model: conf.setting
+    pk: 12
+-   fields: {name: SSL_ENABLED, site: 1, value: 'False'}
+    model: conf.setting
+    pk: 13
+-   fields: {name: AKISMET_API_KEY, site: 1, value: ''}
+    model: conf.setting
+    pk: 14
+-   fields: {name: COMMENTS_DEFAULT_APPROVED, site: 1, value: 'True'}
+    model: conf.setting
+    pk: 15
+-   fields: {name: TWITTER_ACCESS_TOKEN_KEY, site: 1, value: ''}
+    model: conf.setting
+    pk: 16
+-   fields: {name: TWITTER_DEFAULT_QUERY, site: 1, value: 'from:maltman23'}
+    model: conf.setting
+    pk: 17
+-   fields: {name: SITE_TITLE, site: 1, value: Hackers in Residence}
+    model: conf.setting
+    pk: 18
+-   fields: {name: BLOG_POST_PER_PAGE, site: 1, value: '5'}
+    model: conf.setting
+    pk: 19
+-   fields: {name: COMMENTS_NOTIFICATION_EMAILS, site: 1, value: ''}
+    model: conf.setting
+    pk: 20
+-   fields: {name: COMMENTS_DISQUS_API_PUBLIC_KEY, site: 1, value: ''}
+    model: conf.setting
+    pk: 21
+-   fields: {name: COMMENTS_DISQUS_API_SECRET_KEY, site: 1, value: ''}
+    model: conf.setting
+    pk: 22
+-   fields: {name: TWITTER_CONSUMER_KEY, site: 1, value: ''}
+    model: conf.setting
+    pk: 23
+-   fields: {name: COMMENTS_ACCOUNT_REQUIRED, site: 1, value: 'False'}
+    model: conf.setting
+    pk: 24
+-   fields: {name: MAX_PAGING_LINKS, site: 1, value: '10'}
+    model: conf.setting
+    pk: 25
+-   fields: {name: TWITTER_ACCESS_TOKEN_SECRET, site: 1, value: ''}
+    model: conf.setting
+    pk: 26
+-   fields: {name: TAG_CLOUD_SIZES, site: 1, value: '4'}
+    model: conf.setting
+    pk: 27
+-   fields: {name: COMMENTS_DISQUS_SHORTNAME, site: 1, value: ''}
+    model: conf.setting
+    pk: 28
+-   fields: {name: SSL_FORCE_HOST, site: 1, value: ''}
+    model: conf.setting
+    pk: 29
+-   fields: {name: RATINGS_ACCOUNT_REQUIRED, site: 1, value: 'False'}
+    model: conf.setting
+    pk: 30
+-   fields: {button_text: Submit, content: <p>Please add information about your organization.</p>,
+        email_copies: '', email_from: '', email_message: '', email_subject: '', response: <p>Thanks
+            for adding your organization</p>, send_email: true}
+    model: forms.form
+    pk: 15
+-   fields: {button_text: Submit, content: <p>This is where you add a residency opportunity
+            for your organization.</p>, email_copies: '', email_from: '', email_message: '',
+        email_subject: '', response: <p>Thanks for adding this opportunity!</p>, send_email: false}
+    model: forms.form
+    pk: 16
+-   fields: {button_text: Submit, content: <p>Fill in the form below to get in touch
+            with us.</p>, email_copies: '', email_from: '', email_message: '', email_subject: '',
+        response: <p>Thanks for getting in touch with us. We'll get back to you as
+            soon as possible.</p>, send_email: true}
+    model: forms.form
+    pk: 3
+-   fields: {_order: 0, choices: '', default: '', field_type: 1, form: 3, help_text: '',
+        label: Name, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 1
+-   fields: {_order: 1, choices: '', default: '', field_type: 3, form: 3, help_text: '',
+        label: Email, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 2
+-   fields: {_order: 2, choices: 'Billing, Sales, Support', default: '', field_type: 6,
+        form: 3, help_text: '', label: Subject, placeholder_text: '', required: true,
+        visible: true}
+    model: forms.field
+    pk: 3
+-   fields: {_order: 3, choices: '', default: '', field_type: 2, form: 3, help_text: '',
+        label: Message, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 4
+-   fields: {_order: 0, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: Name, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 5
+-   fields: {_order: 1, choices: '', default: '', field_type: 14, form: 15, help_text: '',
+        label: Website, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 6
+-   fields: {_order: 2, choices: '', default: '', field_type: 2, form: 15, help_text: '',
+        label: Street Address, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 7
+-   fields: {_order: 3, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: City, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 8
+-   fields: {_order: 4, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: State/Province (if applicable), placeholder_text: '', required: false,
+        visible: true}
+    model: forms.field
+    pk: 9
+-   fields: {_order: 5, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: Postal Code (if applicable), placeholder_text: '', required: false,
+        visible: true}
+    model: forms.field
+    pk: 10
+-   fields: {_order: 7, choices: '', default: '', field_type: 3, form: 15, help_text: '',
+        label: Contact Email, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 11
+-   fields: {_order: 6, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: Country, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 12
+-   fields: {_order: 9, choices: '', default: '', field_type: 2, form: 15, help_text: General
+            information about the space, label: About us, placeholder_text: '', required: false,
+        visible: true}
+    model: forms.field
+    pk: 13
+-   fields: {_order: 0, choices: '', default: '', field_type: 1, form: 16, help_text: (link
+            back to the sponsoring organization), label: Organization, placeholder_text: '',
+        required: true, visible: true}
+    model: forms.field
+    pk: 14
+-   fields: {_order: 3, choices: '', default: '', field_type: 2, form: 16, help_text: Instructions
+            on how to apply for this opportunity, label: Application Instructions,
+        placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 15
+-   fields: {_order: 17, choices: '', default: '', field_type: 2, form: 16, help_text: '',
+        label: Additional Offer details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 17
+-   fields: {_order: 19, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: 'Required Language(s)?', placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 19
+-   fields: {_order: 37, choices: '', default: '', field_type: 2, form: 16, help_text: '',
+        label: Other Requirements, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 20
+-   fields: {_order: 24, choices: '', default: '', field_type: 2, form: 16, help_text: '',
+        label: Additional details about residency dates, placeholder_text: '', required: false,
+        visible: true}
+    model: forms.field
+    pk: 21
+-   fields: {_order: 5, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Travel Expenses, placeholder_text: What we offer, required: false,
+        visible: true}
+    model: forms.field
+    pk: 22
+-   fields: {_order: 2, choices: '', default: '', field_type: 2, form: 16, help_text: '',
+        label: Residency Description, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 23
+-   fields: {_order: 6, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Travel Expenses details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 24
+-   fields: {_order: 7, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Housing, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 25
+-   fields: {_order: 8, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Housing details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 26
+-   fields: {_order: 9, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Food, placeholder_text: What we offer, required: false, visible: true}
+    model: forms.field
+    pk: 27
+-   fields: {_order: 10, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Food details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 28
+-   fields: {_order: 11, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Stipend, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 29
+-   fields: {_order: 12, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Stipend details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 30
+-   fields: {_order: 13, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Studio space, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 31
+-   fields: {_order: 14, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Studio space details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 32
+-   fields: {_order: 15, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Tools, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 33
+-   fields: {_order: 16, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Tools details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 34
+-   fields: {_order: 20, choices: '', default: '', field_type: 10, form: 16, help_text: 'Earliest
+            date the residency can start?', label: Start Date, placeholder_text: '',
+        required: false, visible: true}
+    model: forms.field
+    pk: 35
+-   fields: {_order: 21, choices: '', default: '', field_type: 10, form: 16, help_text: 'Latest
+            date the residency can end?', label: End Date, placeholder_text: '', required: false,
+        visible: true}
+    model: forms.field
+    pk: 36
+-   fields: {_order: 22, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Minimum stay, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 37
+-   fields: {_order: 23, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Maximum stay, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 38
+-   fields: {_order: 25, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Mentoring, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 39
+-   fields: {_order: 26, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Mentoring details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 40
+-   fields: {_order: 27, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Talk(s), placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 41
+-   fields: {_order: 28, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Talk details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 42
+-   fields: {_order: 29, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Workshop(s), placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 43
+-   fields: {_order: 31, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Presentation(s), placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 44
+-   fields: {_order: 32, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Presentations details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 45
+-   fields: {_order: 33, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Class(es), placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 46
+-   fields: {_order: 34, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Class(es) details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 47
+-   fields: {_order: 36, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Hackathon(s) details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 48
+-   fields: {_order: 8, choices: '', default: '', field_type: 1, form: 15, help_text: '',
+        label: Phone, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 49
+-   fields: {_order: 10, choices: '', default: '', field_type: 9, form: 15, help_text: You
+            can upload additional pictures and video from your main organization page,
+        label: Picture, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 50
+-   fields: {_order: 35, choices: '', default: '', field_type: 4, form: 16, help_text: '',
+        label: Hackathon(s), placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 51
+-   fields: {_order: 30, choices: '', default: '', field_type: 1, form: 16, help_text: '',
+        label: Workshop details, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 52
+-   fields: {_order: 4, choices: '', default: '', field_type: 1, form: 16, help_text: What
+            we offer, label: HEADER2, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 53
+-   fields: {_order: 1, choices: '', default: '', field_type: 1, form: 16, help_text: About
+            the Residency, label: HEADER1, placeholder_text: '', required: true, visible: true}
+    model: forms.field
+    pk: 54
+-   fields: {_order: 18, choices: '', default: '', field_type: 1, form: 16, help_text: What
+            we Require, label: HEADER3, placeholder_text: '', required: false, visible: true}
+    model: forms.field
+    pk: 55
+-   fields: {entry_time: !!timestamp '2014-02-03 19:55:04.849364+00:00', form: 15}
+    model: forms.formentry
+    pk: 1
+-   fields: {entry_time: !!timestamp '2014-02-03 20:15:09.001508+00:00', form: 16}
+    model: forms.formentry
+    pk: 2
+-   fields: {entry_time: !!timestamp '2014-02-14 22:01:46.742211+00:00', form: 15}
+    model: forms.formentry
+    pk: 3
+-   fields: {entry_time: !!timestamp '2014-02-14 23:52:00.195867+00:00', form: 15}
+    model: forms.formentry
+    pk: 4
+-   fields: {entry: 1, field_id: 5, value: HackAndBack}
+    model: forms.fieldentry
+    pk: 1
+-   fields: {entry: 1, field_id: 6, value: 'http://foobar.com/'}
+    model: forms.fieldentry
+    pk: 2
+-   fields: {entry: 1, field_id: 7, value: 12345 Hack Avenenue}
+    model: forms.fieldentry
+    pk: 3
+-   fields: {entry: 1, field_id: 8, value: Hackedelphia}
+    model: forms.fieldentry
+    pk: 4
+-   fields: {entry: 1, field_id: 9, value: PA}
+    model: forms.fieldentry
+    pk: 5
+-   fields: {entry: 1, field_id: 10, value: '12345'}
+    model: forms.fieldentry
+    pk: 6
+-   fields: {entry: 1, field_id: 11, value: hack@hackon.foobar}
+    model: forms.fieldentry
+    pk: 7
+-   fields: {entry: 1, field_id: 12, value: USA}
+    model: forms.fieldentry
+    pk: 8
+-   fields: {entry: 1, field_id: 13, value: 'A space for making things. We offer our
+            members and the public tools, classes, and a community of like minded
+            people.'}
+    model: forms.fieldentry
+    pk: 9
+-   fields: {entry: 2, field_id: 14, value: HackAndBack}
+    model: forms.fieldentry
+    pk: 10
+-   fields: {entry: 2, field_id: 15, value: "To apply for this opportunity please\
+            \ provide as many of these as you want to provide.\r\n\r\n+A Hacker Resume\r\
+            \n+ Essay on why you want to come to HackAndBack           \t+ Link(s)\
+            \ to your website(s)\r\n+ Link(s) to your portfolio(s)\r\n+ Link(s) to\
+            \ your Github(s)\r\n+ Contact info (phone, email, Facebook, Twitter, etc.)\r\
+            \n"}
+    model: forms.fieldentry
+    pk: 11
+-   fields: {entry: 2, field_id: 16, value: 'Travel Expenses, Housing, Food'}
+    model: forms.fieldentry
+    pk: 12
+-   fields: {entry: 2, field_id: 22, value: ''}
+    model: forms.fieldentry
+    pk: 13
+-   fields: {entry: 2, field_id: 17, value: ''}
+    model: forms.fieldentry
+    pk: 14
+-   fields: {entry: 2, field_id: 23, value: ''}
+    model: forms.fieldentry
+    pk: 15
+-   fields: {entry: 2, field_id: 18, value: ''}
+    model: forms.fieldentry
+    pk: 16
+-   fields: {entry: 2, field_id: 24, value: ''}
+    model: forms.fieldentry
+    pk: 17
+-   fields: {entry: 2, field_id: 19, value: anything}
+    model: forms.fieldentry
+    pk: 18
+-   fields: {entry: 2, field_id: 25, value: anything}
+    model: forms.fieldentry
+    pk: 19
+-   fields: {entry: 2, field_id: 20, value: deta}
+    model: forms.fieldentry
+    pk: 20
+-   fields: {entry: 2, field_id: 26, value: de}
+    model: forms.fieldentry
+    pk: 21
+-   fields: {entry: 2, field_id: 21, value: d}
+    model: forms.fieldentry
+    pk: 22
+-   fields: {entry: 2, field_id: 27, value: d}
+    model: forms.fieldentry
+    pk: 23
+-   fields: {entry: 3, field_id: 5, value: Space for all}
+    model: forms.fieldentry
+    pk: 24
+-   fields: {entry: 3, field_id: 6, value: 'http://foobar.com/'}
+    model: forms.fieldentry
+    pk: 25
+-   fields: {entry: 3, field_id: 7, value: ''}
+    model: forms.fieldentry
+    pk: 26
+-   fields: {entry: 3, field_id: 8, value: Sevastopol}
+    model: forms.fieldentry
+    pk: 27
+-   fields: {entry: 3, field_id: 9, value: ''}
+    model: forms.fieldentry
+    pk: 28
+-   fields: {entry: 3, field_id: 10, value: ''}
+    model: forms.fieldentry
+    pk: 29
+-   fields: {entry: 3, field_id: 11, value: Us@foome.foo}
+    model: forms.fieldentry
+    pk: 30
+-   fields: {entry: 3, field_id: 49, value: ''}
+    model: forms.fieldentry
+    pk: 31
+-   fields: {entry: 3, field_id: 12, value: New Zealand}
+    model: forms.fieldentry
+    pk: 32
+-   fields: {entry: 3, field_id: 13, value: about our space...}
+    model: forms.fieldentry
+    pk: 33
+-   fields: {entry: 3, field_id: 50, value: null}
+    model: forms.fieldentry
+    pk: 34
+-   fields: {entry: 4, field_id: 5, value: Fake Example Organization A}
+    model: forms.fieldentry
+    pk: 35
+-   fields: {entry: 4, field_id: 6, value: 'http://www.CornfieldElectronics.com/'}
+    model: forms.fieldentry
+    pk: 36
+-   fields: {entry: 4, field_id: 7, value: '1800 Market St #123'}
+    model: forms.fieldentry
+    pk: 37
+-   fields: {entry: 4, field_id: 8, value: San Francisco}
+    model: forms.fieldentry
+    pk: 38
+-   fields: {entry: 4, field_id: 9, value: CA}
+    model: forms.fieldentry
+    pk: 39
+-   fields: {entry: 4, field_id: 10, value: '94102'}
+    model: forms.fieldentry
+    pk: 40
+-   fields: {entry: 4, field_id: 11, value: maltman23@hotmail.com}
+    model: forms.fieldentry
+    pk: 41
+-   fields: {entry: 4, field_id: 49, value: ''}
+    model: forms.fieldentry
+    pk: 42
+-   fields: {entry: 4, field_id: 12, value: US}
+    model: forms.fieldentry
+    pk: 43
+-   fields: {entry: 4, field_id: 13, value: We make things cool}
+    model: forms.fieldentry
+    pk: 44
+-   fields: {entry: 4, field_id: 50, value: forms/8ca029f5-9323-4f23-b3ec-fb61ad7afd83/Cornfield
+            Logo yellow.jpg}
+    model: forms.fieldentry
+    pk: 45
+-   fields: {_meta_title: '', _order: 4, content_model: richtextpage, created: null,
+        description: Blog, expiry_date: null, gen_description: true, in_menus: '',
+        in_sitemap: true, keywords_string: '', login_required: true, parent: null,
+        publish_date: !!timestamp '2014-02-14 23:17:26+00:00', short_url: null, site: 1,
+        slug: blog, status: 1, title: Blog, titles: Blog, updated: !!timestamp '2014-02-14
+            23:17:51.930507+00:00'}
+    model: pages.page
+    pk: 1
+-   fields: {_meta_title: '', _order: 0, content_model: richtextpage, created: null,
+        description: About us, expiry_date: null, gen_description: true, in_menus: '1,2,3',
+        in_sitemap: true, keywords_string: '', login_required: false, parent: null,
+        publish_date: !!timestamp '2014-02-07 20:00:18.971810+00:00', short_url: null,
+        site: 1, slug: about, status: 2, title: About, titles: About, updated: !!timestamp '2014-02-07
+            20:00:18.971903+00:00'}
+    model: pages.page
+    pk: 2
+-   fields: {_meta_title: null, _order: 3, content_model: form, created: null, description: Fill
+            in the form below to get in touch with us., expiry_date: null, gen_description: true,
+        in_menus: '1,2,3', in_sitemap: true, keywords_string: '', login_required: false,
+        parent: null, publish_date: null, short_url: null, site: 1, slug: contact,
+        status: 2, title: Contact, titles: Contact, updated: null}
+    model: pages.page
+    pk: 3
+-   fields: {_meta_title: '', _order: 0, content_model: space, created: !!timestamp '2014-01-27
+            20:38:05.931023+00:00', description: "Content for a space,\_", expiry_date: null,
+        gen_description: true, in_menus: '', in_sitemap: true, keywords_string: '',
+        login_required: false, parent: 10, publish_date: !!timestamp '2014-01-27 20:38:05+00:00',
+        short_url: null, site: 1, slug: list-of-spaces/title-for-a-space, status: 1,
+        title: GeekspaceGwinnett, titles: List of Organizations / GeekspaceGwinnett,
+        updated: !!timestamp '2014-02-10 17:31:37.211844+00:00'}
+    model: pages.page
+    pk: 9
+-   fields: {_meta_title: '', _order: 1, content_model: space, created: !!timestamp '2014-01-27
+            20:40:19.621744+00:00', description: content for the second test space,
+        expiry_date: null, gen_description: true, in_menus: '', in_sitemap: true,
+        keywords_string: '', login_required: false, parent: 10, publish_date: !!timestamp '2014-01-27
+            20:40:19+00:00', short_url: null, site: 1, slug: list-of-spaces/second-test-space,
+        status: 1, title: second test space, titles: List of Organizations / second
+            test space, updated: !!timestamp '2014-02-10 17:31:50.085584+00:00'}
+    model: pages.page
+    pk: 11
+-   fields: {_meta_title: '', _order: 6, content_model: richtextpage, created: !!timestamp '2014-01-30
+            19:14:49.384745+00:00', description: 'Notes on what can be offered to
+            a resident. Including:', expiry_date: null, gen_description: true, in_menus: '',
+        in_sitemap: true, keywords_string: '', login_required: false, parent: null,
+        publish_date: !!timestamp '2014-01-30 19:14:49+00:00', short_url: null, site: 1,
+        slug: offered, status: 1, title: Offered (notes), titles: Offered (notes),
+        updated: !!timestamp '2014-02-26 05:02:28.803098+00:00'}
+    model: pages.page
+    pk: 12
+-   fields: {_meta_title: '', _order: 7, content_model: richtextpage, created: !!timestamp '2014-01-30
+            19:18:17.700261+00:00', description: Notes on what is required of a resident.,
+        expiry_date: null, gen_description: true, in_menus: '', in_sitemap: true,
+        keywords_string: '', login_required: false, parent: null, publish_date: !!timestamp '2014-01-30
+            19:18:17+00:00', short_url: null, site: 1, slug: required-notes, status: 1,
+        title: Required (notes), titles: Required (notes), updated: !!timestamp '2014-02-26
+            05:02:42.459629+00:00'}
+    model: pages.page
+    pk: 13
+-   fields: {_meta_title: '', _order: 5, content_model: richtextpage, created: !!timestamp '2014-02-03
+            19:47:07.259033+00:00', description: Name of the Organization, expiry_date: null,
+        gen_description: true, in_menus: '', in_sitemap: true, keywords_string: '',
+        login_required: false, parent: null, publish_date: !!timestamp '2014-02-03
+            19:47:07+00:00', short_url: null, site: 1, slug: sample-organization-page,
+        status: 1, title: Sample Organization Page, titles: Sample Organization Page,
+        updated: !!timestamp '2014-02-10 17:30:42.362912+00:00'}
+    model: pages.page
+    pk: 14
+-   fields: {_meta_title: '', _order: 1, content_model: form, created: !!timestamp '2014-02-03
+            19:52:06.521069+00:00', description: Please add information about your
+            organization., expiry_date: null, gen_description: true, in_menus: '1,2,3',
+        in_sitemap: true, keywords_string: '', login_required: false, parent: null,
+        publish_date: !!timestamp '2014-02-03 19:52:06+00:00', short_url: null, site: 1,
+        slug: organization, status: 2, title: Add your Organization, titles: Add your
+            Organization, updated: !!timestamp '2014-02-21 20:40:30.740810+00:00'}
+    model: pages.page
+    pk: 15
+-   fields: {_meta_title: '', _order: 2, content_model: form, created: !!timestamp '2014-02-03
+            20:05:03.116796+00:00', description: This is where you add a residency
+            opportunity for your organization., expiry_date: null, gen_description: true,
+        in_menus: '2', in_sitemap: true, keywords_string: '', login_required: true,
+        parent: null, publish_date: !!timestamp '2014-02-03 20:05:03+00:00', short_url: null,
+        site: 1, slug: add-a-residency-opportunity, status: 2, title: Add your organization's
+            residency opportunity, titles: Add your organization's residency opportunity,
+        updated: !!timestamp '2014-02-24 02:12:28.490363+00:00'}
+    model: pages.page
+    pk: 16
+-   fields: {_meta_title: '', _order: 8, content_model: organization, created: !!timestamp '2014-02-25
+            21:14:11.742079+00:00', description: Entered from admin., expiry_date: null,
+        gen_description: true, in_menus: '', in_sitemap: true, keywords_string: '',
+        login_required: false, parent: null, publish_date: !!timestamp '2014-02-25
+            21:14:11+00:00', short_url: null, site: 1, slug: test-organization-title,
+        status: 2, title: Test organization title, titles: Test organization title,
+        updated: !!timestamp '2014-02-26 05:02:01.979089+00:00'}
+    model: pages.page
+    pk: 17
+-   fields: {_meta_title: '', _order: 9, content_model: residency, created: !!timestamp '2014-02-25
+            22:20:40.177121+00:00', description: 'this is content, descended from
+            the page model.', expiry_date: null, gen_description: true, in_menus: '',
+        in_sitemap: true, keywords_string: '', login_required: false, parent: null,
+        publish_date: !!timestamp '2014-02-25 22:20:40+00:00', short_url: null, site: 1,
+        slug: first-residency, status: 2, title: first residency, titles: first residency,
+        updated: !!timestamp '2014-02-26 05:01:04.392369+00:00'}
+    model: pages.page
+    pk: 18
+-   fields: {_meta_title: '', _order: 10, content_model: residency, created: !!timestamp '2014-02-25
+            22:21:30.925719+00:00', description: content, expiry_date: null, gen_description: true,
+        in_menus: '', in_sitemap: true, keywords_string: '', login_required: false,
+        parent: null, publish_date: !!timestamp '2014-02-25 22:21:30+00:00', short_url: null,
+        site: 1, slug: second-residency, status: 2, title: second residency, titles: second
+            residency, updated: !!timestamp '2014-02-26 05:01:32.274442+00:00'}
+    model: pages.page
+    pk: 19
+-   fields: {_meta_title: '', _order: 11, content_model: residency, created: !!timestamp '2014-02-25
+            23:36:41.926617+00:00', description: Content field, expiry_date: null,
+        gen_description: true, in_menus: '', in_sitemap: true, keywords_string: '',
+        login_required: false, parent: null, publish_date: !!timestamp '2014-02-25
+            23:36:41+00:00', short_url: null, site: 1, slug: third-residency, status: 2,
+        title: third residency, titles: third residency, updated: !!timestamp '2014-02-27
+            00:12:30.934077+00:00'}
+    model: pages.page
+    pk: 20
+-   fields: {_meta_title: '', _order: 13, content_model: richtextpage, created: !!timestamp '2014-02-26
+            00:12:31.215762+00:00', description: A list of residencies., expiry_date: null,
+        gen_description: true, in_menus: '1,2,3', in_sitemap: true, keywords_string: '',
+        login_required: false, parent: null, publish_date: !!timestamp '2014-02-26
+            00:12:31+00:00', short_url: null, site: 1, slug: list-of-residencies,
+        status: 2, title: List of Residency Opportunities, titles: List of Residency
+            Opportunities, updated: !!timestamp '2014-02-26 04:56:39.030103+00:00'}
+    model: pages.page
+    pk: 21
+-   fields: {_meta_title: '', _order: 12, content_model: richtextpage, created: !!timestamp '2014-02-26
+            04:57:05.617822+00:00', description: list..., expiry_date: null, gen_description: true,
+        in_menus: '1,2,3', in_sitemap: true, keywords_string: '', login_required: false,
+        parent: null, publish_date: !!timestamp '2014-02-26 04:57:05.614884+00:00',
+        short_url: null, site: 1, slug: list-of-organizations, status: 2, title: List
+            of Organizations, titles: List of Organizations, updated: !!timestamp '2014-02-26
+            04:57:05.617822+00:00'}
+    model: pages.page
+    pk: 22
+-   fields: {content: '<p>About us</p>
+
+            <p></p>
+
+            <p>The Hackers in Residency program is about connecting cool organizations
+            with cool people so that we can make the world better.</p>'}
+    model: pages.richtextpage
+    pk: 2
+-   fields: {content: <p>Blog</p>}
+    model: pages.richtextpage
+    pk: 1
+-   fields: {content: <p>list...</p>}
+    model: pages.richtextpage
+    pk: 22
+-   fields: {content: <p>A list of residencies.</p>}
+    model: pages.richtextpage
+    pk: 21
+-   fields: {content: "<p>Notes on what can be offered to a resident. Including:</p>\n\
+            <p>Thinking of a model of things that can be offered of\_</p>\n<p>slug:\
+            \ The thing being offered, like \_'Housing'</p>\n<p>y/n: is it offered</p>\n\
+            <p>summary: one line summary of what is offered.</p>\n<p>details: freeform\
+            \ text explaining what exactly is offered</p>\n<p>sortorder: number, the\
+            \ order that the offered items are displayed.</p>\n<p></p>\n<p></p>\n\
+            <p dir=\"ltr\">- Travel expenses</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Housing</p>\n\
+            <p dir=\"ltr\">\_\_\_\_\_ - Food</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Stipend\
+            \ (where they can list the amount)</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Studio\
+            \ space for Resident to work on their projects</p>\n<p dir=\"ltr\">\_\_\
+            \_\_\_ - Available tools and other resources for Resident to use</p>\n\
+            <p dir=\"ltr\">\_\_\_\_\_ - Classes and Workshops available for Resident\
+            \ to take</p>\n<p><b id=\"docs-internal-guid-5daed575-e491-7a97-7370-273de79be083\"\
+            >\_\_\_\_\_ - Any or all or none of the above</b></p>"}
+    model: pages.richtextpage
+    pk: 12
+-   fields: {content: "<p>Notes on what is required of a resident.</p>\n<p>Thinking\
+            \ of a model like:</p>\n<p>thing: Giving a talk(s)</p>\n<p>y/n/d: yes/no/desired.\
+            \ Is it required</p>\n<p>summary: one line summary of what is required.\
+            \ example 'teach 3 hour class'</p>\n<p>details: freeform text explaining\
+            \ what exactly is required.</p>\n<p></p>\n<p></p>\n<p dir=\"ltr\">- Min/Max\
+            \ of stay - two fields</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Making themselves\
+            \ available for mentoring</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Giving a talk(s)</p>\n\
+            <p dir=\"ltr\">\_\_\_\_\_ - Giving a workshop(s)</p>\n<p dir=\"ltr\">\_\
+            \_\_\_\_ - Giving a presentation(s)</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Teaching\
+            \ a class(es)</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Organizing a hackathon(s)</p>\n\
+            <p dir=\"ltr\">\_\_\_\_\_ - Languages spoken</p>\n<p dir=\"ltr\">\_\_\_\
+            \_\_ - Recommending new Residents for the HiR Program</p>\n<p dir=\"ltr\"\
+            >\_\_\_\_\_ - Any or all or none of the above</p>\n<div></div>\n<p></p>"}
+    model: pages.richtextpage
+    pk: 13
+-   fields: {content: "<p>Name of the Organization</p>\n<p>Description.....</p>\n\
+            <p>Ability to upload photos/videos and add links</p>\n<p>Contact iinfo</p>\n\
+            <p>.......</p>\n<p>A Residency:</p>\n<p>How to apply:</p>\n<p>-a hacker\
+            \ resume</p>\n<p>-essay on why they are interestred in being a resident</p>\n\
+            <p>-Links to the potential residents website</p>\n<p>-links to the potential\
+            \ residents portfolio</p>\n<p>-links to the potential residents github</p>\n\
+            <p>-links to the potential residents contact info</p>\n<p></p>\n<p>...</p>\n\
+            <p>What they offer to residents</p>\n<p>Travel Expenses</p>\n<p dir=\"\
+            ltr\">- Housing</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Food</p>\n<p dir=\"ltr\"\
+            >\_\_\_\_\_ - Stipend (where they can list the amount)</p>\n<p dir=\"\
+            ltr\">\_\_\_\_\_ - Studio space for Resident to work on their projects</p>\n\
+            <p dir=\"ltr\">\_\_\_\_\_ - Available tools and other resources for Resident\
+            \ to use</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Classes and Workshops available\
+            \ for Resident to take</p>\n<p><b id=\"docs-internal-guid-5daed575-f949-6ec9-6bc4-c611bee42cd7\"\
+            >\_\_\_\_\_ - Any or all or none of the above</b></p>\n<p></p>\n<p>Requirements\
+            \ of the resident</p>\n<p dir=\"ltr\">- Housing</p>\n<p dir=\"ltr\">\_\
+            \_\_\_\_ - Food</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Stipend (where they can\
+            \ list the amount)</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Studio space for Resident\
+            \ to work on their projects</p>\n<p dir=\"ltr\">\_\_\_\_\_ - Available\
+            \ tools and other resources for Resident to use</p>\n<p dir=\"ltr\">\_\
+            \_\_\_\_ - Classes and Workshops available for Resident to take</p>\n\
+            <p><b id=\"docs-internal-guid-5daed575-f949-6ec9-6bc4-c611bee42cd7\">\_\
+            \_\_\_\_ - Any or all or none of the above</b></p>"}
+    model: pages.richtextpage
+    pk: 14
+-   fields: {interested: true, type: search, value: 'from:stephen_mcd mezzanine'}
+    model: twitter.query
+    pk: 1
+-   fields: {interested: true, type: search, value: 'from:maltman23'}
+    model: twitter.query
+    pk: 2
+-   fields: {interested: true, type: search, value: ''}
+    model: twitter.query
+    pk: 3
+-   fields: {created_at: !!timestamp '2014-01-22 00:44:34+00:00', full_name: mat caissy,
+        profile_image_url: 'http://pbs.twimg.com/profile_images/3503074735/da97e862eafaaff001d6d8b66fbb55fa_normal.jpeg',
+        query: 1, remote_id: '425791984926609408', retweeter_full_name: Stephen McDonald,
+        retweeter_profile_image_url: 'http://pbs.twimg.com/profile_images/378800000785660544/c0d91874a83ba404e77598720697d935_normal.jpeg',
+        retweeter_user_name: stephen_mcd, text: '!!@&amp;*# wordpress. Getting my
+            hands dirty with python &gt; django &gt; mezzanine. Challenge accepted.',
+        user_name: matsitka}
+    model: twitter.tweet
+    pk: 1
+-   fields: {label: Travel Expenses, notes: '', slug: travel_expenses, sortorder: 10,
+        status: N, summary: ''}
+    model: hir.offerskeleton
+    pk: 1
+-   fields: {about: 'about me. I am an organization, entered via the admin', city: ein
+            Stadt, content: <p>Entered from admin.</p>, country: Das Land, email: email
+            me bitte, name: test organization name, phone: phone is so passe, postal_code: postal
+            code, state: the state, street_address: the street address, website: my
+            website}
+    model: hir.organization
+    pk: 17
+-   fields: {about: this is our residency about, application_instructions: application
+            instructions., content: '<p>this is content, descended from the page model.</p>',
+        offer_additional_detail: additional detail, offer_food_check: false, offer_food_detail: foo,
+        offer_housing_check: true, offer_housing_detail: housing, offer_stipend_check: false,
+        offer_stipend_detail: stipend, offer_studio_check: false, offer_studio_detail: '',
+        offer_tools_check: false, offer_tools_detail: '', offer_travel_check: false,
+        offer_travel_detail: travel detail, organization: 17, require_class_check: false,
+        require_class_detail: '', require_date_detail: etc dates and stuff, require_end_date: null,
+        require_hackathon_check: false, require_hackathon_detail: '', require_language: languages!,
+        require_maximum_stay: '', require_mentoring_check: false, require_mentoring_detail: '',
+        require_minimum_stay: '', require_other_requirements: other requirements.,
+        require_presentation_check: false, require_presentation_detail: '', require_start_date: null,
+        require_talk_check: false, require_talk_detail: '', require_workshop_check: false,
+        require_workshop_detail: ''}
+    model: hir.residency
+    pk: 18
+-   fields: {about: '', application_instructions: '', content: <p>content</p>, offer_additional_detail: '',
+        offer_food_check: false, offer_food_detail: '', offer_housing_check: false,
+        offer_housing_detail: '', offer_stipend_check: false, offer_stipend_detail: '',
+        offer_studio_check: false, offer_studio_detail: '', offer_tools_check: false,
+        offer_tools_detail: '', offer_travel_check: false, offer_travel_detail: '',
+        organization: 17, require_class_check: false, require_class_detail: '', require_date_detail: '',
+        require_end_date: null, require_hackathon_check: false, require_hackathon_detail: '',
+        require_language: '', require_maximum_stay: '', require_mentoring_check: false,
+        require_mentoring_detail: '', require_minimum_stay: '', require_other_requirements: '',
+        require_presentation_check: false, require_presentation_detail: '', require_start_date: null,
+        require_talk_check: false, require_talk_detail: '', require_workshop_check: false,
+        require_workshop_detail: ''}
+    model: hir.residency
+    pk: 19
+-   fields: {about: About this great residency! You will be in beautiful Hackerville
+            with all of the awesome people doing awesome things., application_instructions: "Here\
+            \ are our instructions. We have a lot of instructions, \r\nso you should\
+            \ pay close attention!!\r\n", content: <p>Content field</p>, offer_additional_detail: "more\
+            \ details about we offer are here.\r\n\r\nWe offer so much, good people,\
+            \ a good environment, daily yoga classes and unlimited club mate.", offer_food_check: true,
+        offer_food_detail: Food! Food is a vital part of our mission...it is a party
+            of our mission!, offer_housing_check: false, offer_housing_detail: 'we
+            don''t offer houseing, sorry. ', offer_stipend_check: false, offer_stipend_detail: '',
+        offer_studio_check: true, offer_studio_detail: a beautiful studio., offer_tools_check: true,
+        offer_tools_detail: All the tools you could imagine., offer_travel_check: true,
+        offer_travel_detail: yes we offer travel expenses., organization: 17, require_class_check: false,
+        require_class_detail: '', require_date_detail: '', require_end_date: null,
+        require_hackathon_check: false, require_hackathon_detail: '', require_language: 'Two
+            languages if possible. ', require_maximum_stay: '', require_mentoring_check: false,
+        require_mentoring_detail: '', require_minimum_stay: '', require_other_requirements: '',
+        require_presentation_check: false, require_presentation_detail: '', require_start_date: null,
+        require_talk_check: false, require_talk_detail: '', require_workshop_check: false,
+        require_workshop_detail: ''}
+    model: hir.residency
+    pk: 20
+-   fields: {app_name: conf, applied: !!timestamp '2014-01-27 20:29:54.391417+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 1
+-   fields: {app_name: conf, applied: !!timestamp '2014-01-27 20:29:54.450569+00:00',
+        migration: 0002_auto__add_field_setting_site}
+    model: south.migrationhistory
+    pk: 2
+-   fields: {app_name: conf, applied: !!timestamp '2014-01-27 20:29:54.542480+00:00',
+        migration: 0003_update_site_setting}
+    model: south.migrationhistory
+    pk: 3
+-   fields: {app_name: conf, applied: !!timestamp '2014-01-27 20:29:54.625793+00:00',
+        migration: 0004_ssl_account_settings_rename}
+    model: south.migrationhistory
+    pk: 4
+-   fields: {app_name: core, applied: !!timestamp '2014-01-27 20:29:54.708274+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 5
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:29:54.767462+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 6
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:29:54.825791+00:00',
+        migration: 0002_auto__del_field_page__keywords__add_field_page_keywords_string__chg_fi}
+    model: south.migrationhistory
+    pk: 7
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:54.884153+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 8
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:54.942463+00:00',
+        migration: 0002_auto}
+    model: south.migrationhistory
+    pk: 9
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:55.046623+00:00',
+        migration: 0003_categories}
+    model: south.migrationhistory
+    pk: 10
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:55.133601+00:00',
+        migration: 0004_auto__del_field_blogpost_category}
+    model: south.migrationhistory
+    pk: 11
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:55.192528+00:00',
+        migration: 0005_auto__del_comment__add_field_blogpost_comments_count__chg_field_blogpo}
+    model: south.migrationhistory
+    pk: 12
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:55.250837+00:00',
+        migration: 0006_auto__del_field_blogpost__keywords__add_field_blogpost_keywords_string}
+    model: south.migrationhistory
+    pk: 13
+-   fields: {app_name: core, applied: !!timestamp '2014-01-27 20:29:55.309217+00:00',
+        migration: 0002_auto__del_keyword}
+    model: south.migrationhistory
+    pk: 14
+-   fields: {app_name: core, applied: !!timestamp '2014-01-27 20:29:55.367515+00:00',
+        migration: 0003_auto__add_sitepermission}
+    model: south.migrationhistory
+    pk: 15
+-   fields: {app_name: core, applied: !!timestamp '2014-01-27 20:29:55.473301+00:00',
+        migration: 0004_set_site_permissions}
+    model: south.migrationhistory
+    pk: 16
+-   fields: {app_name: core, applied: !!timestamp '2014-01-27 20:29:55.567020+00:00',
+        migration: 0005_auto__chg_field_sitepermission_user__del_unique_sitepermission_user}
+    model: south.migrationhistory
+    pk: 17
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:55.659847+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 18
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:55.754183+00:00',
+        migration: 0002_auto__add_keyword__add_assignedkeyword}
+    model: south.migrationhistory
+    pk: 19
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:55.845857+00:00',
+        migration: 0003_auto__add_rating}
+    model: south.migrationhistory
+    pk: 20
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:55.937543+00:00',
+        migration: 0004_auto__chg_field_rating_object_pk__chg_field_assignedkeyword_object_pk}
+    model: south.migrationhistory
+    pk: 21
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:56.350003+00:00',
+        migration: 0005_keyword_site}
+    model: south.migrationhistory
+    pk: 22
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:56.533755+00:00',
+        migration: 0006_move_keywords}
+    model: south.migrationhistory
+    pk: 23
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:56.745946+00:00',
+        migration: 0007_auto__add_field_assignedkeyword__order}
+    model: south.migrationhistory
+    pk: 24
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:56.854288+00:00',
+        migration: 0008_set_keyword_order}
+    model: south.migrationhistory
+    pk: 25
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.001354+00:00',
+        migration: 0009_auto__chg_field_keyword_title__chg_field_keyword_slug}
+    model: south.migrationhistory
+    pk: 26
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.168174+00:00',
+        migration: 0009_auto__del_field_threadedcomment_email_hash}
+    model: south.migrationhistory
+    pk: 27
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.293515+00:00',
+        migration: 0010_auto__chg_field_keyword_slug__chg_field_keyword_title}
+    model: south.migrationhistory
+    pk: 28
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.400550+00:00',
+        migration: 0011_auto__add_field_threadedcomment_rating_count__add_field_threadedcommen}
+    model: south.migrationhistory
+    pk: 29
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.487689+00:00',
+        migration: 0012_auto__add_field_rating_rating_date}
+    model: south.migrationhistory
+    pk: 30
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.596058+00:00',
+        migration: 0013_auto__add_field_threadedcomment_rating_sum}
+    model: south.migrationhistory
+    pk: 31
+-   fields: {app_name: generic, applied: !!timestamp '2014-01-27 20:29:57.704405+00:00',
+        migration: 0014_auto__add_field_rating_user}
+    model: south.migrationhistory
+    pk: 32
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:57.844314+00:00',
+        migration: 0007_auto__add_field_blogpost_site}
+    model: south.migrationhistory
+    pk: 33
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:57.954449+00:00',
+        migration: 0008_auto__add_field_blogpost_rating_average__add_field_blogpost_rating_cou}
+    model: south.migrationhistory
+    pk: 34
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.154335+00:00',
+        migration: 0009_auto__chg_field_blogpost_content}
+    model: south.migrationhistory
+    pk: 35
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.242263+00:00',
+        migration: 0010_category_site_allow_comments}
+    model: south.migrationhistory
+    pk: 36
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.337775+00:00',
+        migration: 0011_comment_site_data}
+    model: south.migrationhistory
+    pk: 37
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.454448+00:00',
+        migration: 0012_auto__add_field_blogpost_featured_image}
+    model: south.migrationhistory
+    pk: 38
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.597227+00:00',
+        migration: 0013_auto__chg_field_blogpost_featured_image}
+    model: south.migrationhistory
+    pk: 39
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.684010+00:00',
+        migration: 0014_auto__add_field_blogpost_gen_description}
+    model: south.migrationhistory
+    pk: 40
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.771176+00:00',
+        migration: 0015_auto__chg_field_blogcategory_title__chg_field_blogcategory_slug__chg_f}
+    model: south.migrationhistory
+    pk: 41
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:58.896208+00:00',
+        migration: 0016_add_field_blogpost__meta_title}
+    model: south.migrationhistory
+    pk: 42
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:59.021227+00:00',
+        migration: 0017_add_field_blogpost__related_posts}
+    model: south.migrationhistory
+    pk: 43
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:59.156936+00:00',
+        migration: 0018_auto__add_field_blogpost_in_sitemap}
+    model: south.migrationhistory
+    pk: 44
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:59.250700+00:00',
+        migration: 0019_auto__add_field_blogpost_rating_sum}
+    model: south.migrationhistory
+    pk: 45
+-   fields: {app_name: blog, applied: !!timestamp '2014-01-27 20:29:59.371242+00:00',
+        migration: 0020_auto__add_field_blogpost_created__add_field_blogpost_updated}
+    model: south.migrationhistory
+    pk: 46
+-   fields: {app_name: forms, applied: !!timestamp '2014-01-27 20:29:59.497318+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 47
+-   fields: {app_name: forms, applied: !!timestamp '2014-01-27 20:29:59.596293+00:00',
+        migration: 0002_auto__add_field_field_placeholder_text}
+    model: south.migrationhistory
+    pk: 48
+-   fields: {app_name: forms, applied: !!timestamp '2014-01-27 20:29:59.704638+00:00',
+        migration: 0003_auto__chg_field_field_field_type}
+    model: south.migrationhistory
+    pk: 49
+-   fields: {app_name: forms, applied: !!timestamp '2014-01-27 20:30:00.013023+00:00',
+        migration: 0004_auto__chg_field_form_response__chg_field_form_content}
+    model: south.migrationhistory
+    pk: 50
+-   fields: {app_name: forms, applied: !!timestamp '2014-01-27 20:30:00.408986+00:00',
+        migration: 0005_auto__chg_field_fieldentry_value}
+    model: south.migrationhistory
+    pk: 51
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:00.519005+00:00',
+        migration: 0003_auto__add_field_page_site}
+    model: south.migrationhistory
+    pk: 52
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:00.646367+00:00',
+        migration: 0004_auto__del_contentpage__add_richtextpage}
+    model: south.migrationhistory
+    pk: 53
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:00.746378+00:00',
+        migration: 0005_rename_contentpage}
+    model: south.migrationhistory
+    pk: 54
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:00.846389+00:00',
+        migration: 0006_auto__add_field_page_gen_description}
+    model: south.migrationhistory
+    pk: 55
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:00.946394+00:00',
+        migration: 0007_auto__chg_field_page_slug__chg_field_page_title}
+    model: south.migrationhistory
+    pk: 56
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.068862+00:00',
+        migration: 0008_auto__add_link}
+    model: south.migrationhistory
+    pk: 57
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.175923+00:00',
+        migration: 0009_add_field_page_in_menus}
+    model: south.migrationhistory
+    pk: 58
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.263103+00:00',
+        migration: 0010_set_menus}
+    model: south.migrationhistory
+    pk: 59
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.363105+00:00',
+        migration: 0011_delete_nav_flags}
+    model: south.migrationhistory
+    pk: 60
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.463121+00:00',
+        migration: 0012_add_field_page__meta_title}
+    model: south.migrationhistory
+    pk: 61
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.571450+00:00',
+        migration: 0013_auto__add_field_page_in_sitemap}
+    model: south.migrationhistory
+    pk: 62
+-   fields: {app_name: pages, applied: !!timestamp '2014-01-27 20:30:01.838218+00:00',
+        migration: 0014_auto__add_field_page_created__add_field_page_updated}
+    model: south.migrationhistory
+    pk: 63
+-   fields: {app_name: galleries, applied: !!timestamp '2014-01-27 20:30:01.995447+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 64
+-   fields: {app_name: twitter, applied: !!timestamp '2014-01-27 20:30:02.203755+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 65
+-   fields: {app_name: twitter, applied: !!timestamp '2014-01-27 20:30:02.301052+00:00',
+        migration: 0002_auto__chg_field_query_value}
+    model: south.migrationhistory
+    pk: 66
+-   fields: {app_name: hir, applied: !!timestamp '2014-01-27 20:33:01.148576+00:00',
+        migration: 0001_initial}
+    model: south.migrationhistory
+    pk: 67
+-   fields: {app_name: hir, applied: !!timestamp '2014-01-30 20:03:10.333066+00:00',
+        migration: 0002_auto__add_offer__add_required}
+    model: south.migrationhistory
+    pk: 68
+-   fields: {app_name: hir, applied: !!timestamp '2014-01-30 20:17:27.488074+00:00',
+        migration: 0003_auto__add_field_offer_label__add_field_required_label}
+    model: south.migrationhistory
+    pk: 69
+-   fields: {app_name: hir, applied: !!timestamp '2014-01-30 20:58:17.364806+00:00',
+        migration: 0004_auto__del_offer__del_required__add_offerskeleton__add_requiredskeleton}
+    model: south.migrationhistory
+    pk: 70
+-   fields: {codename: add_permission, content_type: 1, name: Can add permission}
+    model: auth.permission
+    pk: 1
+-   fields: {codename: change_permission, content_type: 1, name: Can change permission}
+    model: auth.permission
+    pk: 2
+-   fields: {codename: delete_permission, content_type: 1, name: Can delete permission}
+    model: auth.permission
+    pk: 3
+-   fields: {codename: add_group, content_type: 2, name: Can add group}
+    model: auth.permission
+    pk: 4
+-   fields: {codename: change_group, content_type: 2, name: Can change group}
+    model: auth.permission
+    pk: 5
+-   fields: {codename: delete_group, content_type: 2, name: Can delete group}
+    model: auth.permission
+    pk: 6
+-   fields: {codename: add_user, content_type: 3, name: Can add user}
+    model: auth.permission
+    pk: 7
+-   fields: {codename: change_user, content_type: 3, name: Can change user}
+    model: auth.permission
+    pk: 8
+-   fields: {codename: delete_user, content_type: 3, name: Can delete user}
+    model: auth.permission
+    pk: 9
+-   fields: {codename: add_contenttype, content_type: 4, name: Can add content type}
+    model: auth.permission
+    pk: 10
+-   fields: {codename: change_contenttype, content_type: 4, name: Can change content
+            type}
+    model: auth.permission
+    pk: 11
+-   fields: {codename: delete_contenttype, content_type: 4, name: Can delete content
+            type}
+    model: auth.permission
+    pk: 12
+-   fields: {codename: add_redirect, content_type: 5, name: Can add redirect}
+    model: auth.permission
+    pk: 13
+-   fields: {codename: change_redirect, content_type: 5, name: Can change redirect}
+    model: auth.permission
+    pk: 14
+-   fields: {codename: delete_redirect, content_type: 5, name: Can delete redirect}
+    model: auth.permission
+    pk: 15
+-   fields: {codename: add_session, content_type: 6, name: Can add session}
+    model: auth.permission
+    pk: 16
+-   fields: {codename: change_session, content_type: 6, name: Can change session}
+    model: auth.permission
+    pk: 17
+-   fields: {codename: delete_session, content_type: 6, name: Can delete session}
+    model: auth.permission
+    pk: 18
+-   fields: {codename: add_site, content_type: 7, name: Can add site}
+    model: auth.permission
+    pk: 19
+-   fields: {codename: change_site, content_type: 7, name: Can change site}
+    model: auth.permission
+    pk: 20
+-   fields: {codename: delete_site, content_type: 7, name: Can delete site}
+    model: auth.permission
+    pk: 21
+-   fields: {codename: add_setting, content_type: 8, name: Can add Setting}
+    model: auth.permission
+    pk: 22
+-   fields: {codename: change_setting, content_type: 8, name: Can change Setting}
+    model: auth.permission
+    pk: 23
+-   fields: {codename: delete_setting, content_type: 8, name: Can delete Setting}
+    model: auth.permission
+    pk: 24
+-   fields: {codename: add_sitepermission, content_type: 9, name: Can add Site permission}
+    model: auth.permission
+    pk: 25
+-   fields: {codename: change_sitepermission, content_type: 9, name: Can change Site
+            permission}
+    model: auth.permission
+    pk: 26
+-   fields: {codename: delete_sitepermission, content_type: 9, name: Can delete Site
+            permission}
+    model: auth.permission
+    pk: 27
+-   fields: {codename: add_threadedcomment, content_type: 10, name: Can add Comment}
+    model: auth.permission
+    pk: 28
+-   fields: {codename: change_threadedcomment, content_type: 10, name: Can change
+            Comment}
+    model: auth.permission
+    pk: 29
+-   fields: {codename: delete_threadedcomment, content_type: 10, name: Can delete
+            Comment}
+    model: auth.permission
+    pk: 30
+-   fields: {codename: add_keyword, content_type: 11, name: Can add Keyword}
+    model: auth.permission
+    pk: 31
+-   fields: {codename: change_keyword, content_type: 11, name: Can change Keyword}
+    model: auth.permission
+    pk: 32
+-   fields: {codename: delete_keyword, content_type: 11, name: Can delete Keyword}
+    model: auth.permission
+    pk: 33
+-   fields: {codename: add_assignedkeyword, content_type: 12, name: Can add assigned
+            keyword}
+    model: auth.permission
+    pk: 34
+-   fields: {codename: change_assignedkeyword, content_type: 12, name: Can change
+            assigned keyword}
+    model: auth.permission
+    pk: 35
+-   fields: {codename: delete_assignedkeyword, content_type: 12, name: Can delete
+            assigned keyword}
+    model: auth.permission
+    pk: 36
+-   fields: {codename: add_rating, content_type: 13, name: Can add Rating}
+    model: auth.permission
+    pk: 37
+-   fields: {codename: change_rating, content_type: 13, name: Can change Rating}
+    model: auth.permission
+    pk: 38
+-   fields: {codename: delete_rating, content_type: 13, name: Can delete Rating}
+    model: auth.permission
+    pk: 39
+-   fields: {codename: add_blogpost, content_type: 14, name: Can add Blog post}
+    model: auth.permission
+    pk: 40
+-   fields: {codename: change_blogpost, content_type: 14, name: Can change Blog post}
+    model: auth.permission
+    pk: 41
+-   fields: {codename: delete_blogpost, content_type: 14, name: Can delete Blog post}
+    model: auth.permission
+    pk: 42
+-   fields: {codename: add_blogcategory, content_type: 15, name: Can add Blog Category}
+    model: auth.permission
+    pk: 43
+-   fields: {codename: change_blogcategory, content_type: 15, name: Can change Blog
+            Category}
+    model: auth.permission
+    pk: 44
+-   fields: {codename: delete_blogcategory, content_type: 15, name: Can delete Blog
+            Category}
+    model: auth.permission
+    pk: 45
+-   fields: {codename: add_form, content_type: 16, name: Can add Form}
+    model: auth.permission
+    pk: 46
+-   fields: {codename: change_form, content_type: 16, name: Can change Form}
+    model: auth.permission
+    pk: 47
+-   fields: {codename: delete_form, content_type: 16, name: Can delete Form}
+    model: auth.permission
+    pk: 48
+-   fields: {codename: add_field, content_type: 17, name: Can add Field}
+    model: auth.permission
+    pk: 49
+-   fields: {codename: change_field, content_type: 17, name: Can change Field}
+    model: auth.permission
+    pk: 50
+-   fields: {codename: delete_field, content_type: 17, name: Can delete Field}
+    model: auth.permission
+    pk: 51
+-   fields: {codename: add_formentry, content_type: 18, name: Can add Form entry}
+    model: auth.permission
+    pk: 52
+-   fields: {codename: change_formentry, content_type: 18, name: Can change Form entry}
+    model: auth.permission
+    pk: 53
+-   fields: {codename: delete_formentry, content_type: 18, name: Can delete Form entry}
+    model: auth.permission
+    pk: 54
+-   fields: {codename: add_fieldentry, content_type: 19, name: Can add Form field
+            entry}
+    model: auth.permission
+    pk: 55
+-   fields: {codename: change_fieldentry, content_type: 19, name: Can change Form
+            field entry}
+    model: auth.permission
+    pk: 56
+-   fields: {codename: delete_fieldentry, content_type: 19, name: Can delete Form
+            field entry}
+    model: auth.permission
+    pk: 57
+-   fields: {codename: add_page, content_type: 20, name: Can add Page}
+    model: auth.permission
+    pk: 58
+-   fields: {codename: change_page, content_type: 20, name: Can change Page}
+    model: auth.permission
+    pk: 59
+-   fields: {codename: delete_page, content_type: 20, name: Can delete Page}
+    model: auth.permission
+    pk: 60
+-   fields: {codename: add_richtextpage, content_type: 21, name: Can add Rich text
+            page}
+    model: auth.permission
+    pk: 61
+-   fields: {codename: change_richtextpage, content_type: 21, name: Can change Rich
+            text page}
+    model: auth.permission
+    pk: 62
+-   fields: {codename: delete_richtextpage, content_type: 21, name: Can delete Rich
+            text page}
+    model: auth.permission
+    pk: 63
+-   fields: {codename: add_link, content_type: 22, name: Can add Link}
+    model: auth.permission
+    pk: 64
+-   fields: {codename: change_link, content_type: 22, name: Can change Link}
+    model: auth.permission
+    pk: 65
+-   fields: {codename: delete_link, content_type: 22, name: Can delete Link}
+    model: auth.permission
+    pk: 66
+-   fields: {codename: add_gallery, content_type: 23, name: Can add Gallery}
+    model: auth.permission
+    pk: 67
+-   fields: {codename: change_gallery, content_type: 23, name: Can change Gallery}
+    model: auth.permission
+    pk: 68
+-   fields: {codename: delete_gallery, content_type: 23, name: Can delete Gallery}
+    model: auth.permission
+    pk: 69
+-   fields: {codename: add_galleryimage, content_type: 24, name: Can add Image}
+    model: auth.permission
+    pk: 70
+-   fields: {codename: change_galleryimage, content_type: 24, name: Can change Image}
+    model: auth.permission
+    pk: 71
+-   fields: {codename: delete_galleryimage, content_type: 24, name: Can delete Image}
+    model: auth.permission
+    pk: 72
+-   fields: {codename: add_query, content_type: 25, name: Can add Twitter query}
+    model: auth.permission
+    pk: 73
+-   fields: {codename: change_query, content_type: 25, name: Can change Twitter query}
+    model: auth.permission
+    pk: 74
+-   fields: {codename: delete_query, content_type: 25, name: Can delete Twitter query}
+    model: auth.permission
+    pk: 75
+-   fields: {codename: add_tweet, content_type: 26, name: Can add Tweet}
+    model: auth.permission
+    pk: 76
+-   fields: {codename: change_tweet, content_type: 26, name: Can change Tweet}
+    model: auth.permission
+    pk: 77
+-   fields: {codename: delete_tweet, content_type: 26, name: Can delete Tweet}
+    model: auth.permission
+    pk: 78
+-   fields: {codename: add_migrationhistory, content_type: 27, name: Can add migration
+            history}
+    model: auth.permission
+    pk: 79
+-   fields: {codename: change_migrationhistory, content_type: 27, name: Can change
+            migration history}
+    model: auth.permission
+    pk: 80
+-   fields: {codename: delete_migrationhistory, content_type: 27, name: Can delete
+            migration history}
+    model: auth.permission
+    pk: 81
+-   fields: {codename: add_logentry, content_type: 28, name: Can add log entry}
+    model: auth.permission
+    pk: 82
+-   fields: {codename: change_logentry, content_type: 28, name: Can change log entry}
+    model: auth.permission
+    pk: 83
+-   fields: {codename: delete_logentry, content_type: 28, name: Can delete log entry}
+    model: auth.permission
+    pk: 84
+-   fields: {codename: add_comment, content_type: 29, name: Can add comment}
+    model: auth.permission
+    pk: 85
+-   fields: {codename: change_comment, content_type: 29, name: Can change comment}
+    model: auth.permission
+    pk: 86
+-   fields: {codename: delete_comment, content_type: 29, name: Can delete comment}
+    model: auth.permission
+    pk: 87
+-   fields: {codename: can_moderate, content_type: 29, name: Can moderate comments}
+    model: auth.permission
+    pk: 88
+-   fields: {codename: add_commentflag, content_type: 30, name: Can add comment flag}
+    model: auth.permission
+    pk: 89
+-   fields: {codename: change_commentflag, content_type: 30, name: Can change comment
+            flag}
+    model: auth.permission
+    pk: 90
+-   fields: {codename: delete_commentflag, content_type: 30, name: Can delete comment
+            flag}
+    model: auth.permission
+    pk: 91
+-   fields: {codename: add_residency, content_type: 32, name: Can add residency}
+    model: auth.permission
+    pk: 95
+-   fields: {codename: change_residency, content_type: 32, name: Can change residency}
+    model: auth.permission
+    pk: 96
+-   fields: {codename: delete_residency, content_type: 32, name: Can delete residency}
+    model: auth.permission
+    pk: 97
+-   fields: {codename: add_offerskeleton, content_type: 35, name: Can add offer skeleton}
+    model: auth.permission
+    pk: 104
+-   fields: {codename: change_offerskeleton, content_type: 35, name: Can change offer
+            skeleton}
+    model: auth.permission
+    pk: 105
+-   fields: {codename: delete_offerskeleton, content_type: 35, name: Can delete offer
+            skeleton}
+    model: auth.permission
+    pk: 106
+-   fields: {codename: add_requiredskeleton, content_type: 36, name: Can add required
+            skeleton}
+    model: auth.permission
+    pk: 107
+-   fields: {codename: change_requiredskeleton, content_type: 36, name: Can change
+            required skeleton}
+    model: auth.permission
+    pk: 108
+-   fields: {codename: delete_requiredskeleton, content_type: 36, name: Can delete
+            required skeleton}
+    model: auth.permission
+    pk: 109
+-   fields: {codename: add_organization, content_type: 37, name: Can add organization}
+    model: auth.permission
+    pk: 110
+-   fields: {codename: change_organization, content_type: 37, name: Can change organization}
+    model: auth.permission
+    pk: 111
+-   fields: {codename: delete_organization, content_type: 37, name: Can delete organization}
+    model: auth.permission
+    pk: 112
+-   fields:
+        date_joined: 2014-01-27 20:29:35.154314+00:00
+        email: example@example.com
+        first_name: ''
+        groups: []
+        is_active: true
+        is_staff: true
+        is_superuser: true
+        last_login: 2014-01-27 20:29:35.154314+00:00
+        last_name: ''
+        password: pbkdf2_sha256$10000$7EAFT6ws23Il$tovktvDuawDngXVBaJQRjoDZ5ExRmHFHlKCcFGMb+f0=
+        user_permissions: []
+        username: admin
+    model: auth.user
+    pk: 1
+-   fields:
+        date_joined: 2014-01-27 20:37:05.653381+00:00
+        email: rich.gibson@gmail.com
+        first_name: ''
+        groups: []
+        is_active: true
+        is_staff: true
+        is_superuser: true
+        last_login: 2014-02-26 18:09:47.358938+00:00
+        last_name: ''
+        password: pbkdf2_sha256$10000$Ftfnnymjhcsk$jCX796QBzda1qsk8Eup7wR2GpEi1VTbSJFFv4tBf5pc=
+        user_permissions: []
+        username: richgibson
+    model: auth.user
+    pk: 2
+-   fields:
+        date_joined: 2014-01-27 20:53:52+00:00
+        email: test@test.com
+        first_name: Test
+        groups: []
+        is_active: true
+        is_staff: false
+        is_superuser: false
+        last_login: 2014-01-27 20:53:52+00:00
+        last_name: Account
+        password: pbkdf2_sha256$10000$UzvvWXP9NNYp$vZdio3AbrsV7CyG66Mgb4fAZ4fc2AHLHlh0GneQ4SDY=
+        user_permissions: []
+        username: test
+    model: auth.user
+    pk: 3
+-   fields:
+        date_joined: 2014-01-27 21:42:57+00:00
+        email: mitch@CornfieldElectronics.com
+        first_name: Mitch
+        groups: []
+        is_active: true
+        is_staff: true
+        is_superuser: true
+        last_login: 2014-02-24 02:10:44.621312+00:00
+        last_name: Altman
+        password: pbkdf2_sha256$10000$7CwxGV1xYB2S$KRk5RsJWkrZP1FWDTlPwf3+8dvZ7FL7fwYkzG+sGUWo=
+        user_permissions: []
+        username: maltman23
+    model: auth.user
+    pk: 4
+-   fields:
+        _meta_title: ''
+        allow_comments: true
+        categories: []
+        comments_count: 0
+        content: "<p>How should accounts be handled, and the ability to create new\
+            \ spaces and residencies?</p>\n<p>I can just set it that when an account\
+            \ is created they have the ability to create a space,\_</p>\n<p>and then\
+            \ some logic around which sites they can then edit.\_</p>\n<p>Initially\
+            \ it would probably be easiest if we manually approve new accounts to\
+            \ give them enhanced access.</p>"
+        created: 2014-01-27 20:57:38.159422+00:00
+        description: How should accounts be handled, and the ability to create new
+            spaces and residencies?
+        expiry_date: null
+        featured_image: null
+        gen_description: true
+        in_sitemap: true
+        keywords_string: ''
+        publish_date: 2014-01-27 20:57:38.157346+00:00
+        rating_average: 0.0
+        rating_count: 0
+        rating_sum: 0
+        related_posts: []
+        short_url: null
+        site: 1
+        slug: user-privileges-question
+        status: 2
+        title: User privileges question...
+        updated: 2014-01-27 20:57:38.159422+00:00
+        user: 2
+    model: blog.blogpost
+    pk: 1
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-27 20:56:22.777826+00:00',
+        change_message: Changed password and user_permissions., content_type: 3, object_id: '3',
+        object_repr: test, user: 2}
+    model: admin.logentry
+    pk: 5
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-01-27 20:57:38.164765+00:00',
+        change_message: '', content_type: 14, object_id: '1', object_repr: User privileges
+            question..., user: 2}
+    model: admin.logentry
+    pk: 6
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-27 21:43:12.963732+00:00',
+        change_message: Changed password and is_superuser., content_type: 3, object_id: '4',
+        object_repr: maltman23, user: 2}
+    model: admin.logentry
+    pk: 7
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-27 21:43:28.772284+00:00',
+        change_message: Changed password and is_staff., content_type: 3, object_id: '4',
+        object_repr: maltman23, user: 2}
+    model: admin.logentry
+    pk: 8
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-01-30 19:14:49.481415+00:00',
+        change_message: '', content_type: 21, object_id: '12', object_repr: Offered,
+        user: 2}
+    model: admin.logentry
+    pk: 9
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-30 19:15:03.725724+00:00',
+        change_message: Changed title and content., content_type: 21, object_id: '12',
+        object_repr: Offered (notes), user: 2}
+    model: admin.logentry
+    pk: 10
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-01-30 19:18:17.704266+00:00',
+        change_message: '', content_type: 21, object_id: '13', object_repr: Required
+            (notes), user: 2}
+    model: admin.logentry
+    pk: 11
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-30 19:19:24.175777+00:00',
+        change_message: Changed content., content_type: 21, object_id: '13', object_repr: Required
+            (notes), user: 2}
+    model: admin.logentry
+    pk: 12
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-01-30 19:26:05.598141+00:00',
+        change_message: Changed content., content_type: 21, object_id: '12', object_repr: Offered
+            (notes), user: 2}
+    model: admin.logentry
+    pk: 13
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-01-30 20:05:29.999657+00:00',
+        change_message: '', content_type: 7, object_id: '2', object_repr: 'pistonbot.com:8000',
+        user: 2}
+    model: admin.logentry
+    pk: 14
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-01-30 21:09:19.810020+00:00',
+        change_message: '', content_type: 35, object_id: '1', object_repr: OfferSkeleton
+            object, user: 2}
+    model: admin.logentry
+    pk: 15
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-03 19:47:07.272894+00:00',
+        change_message: '', content_type: 21, object_id: '14', object_repr: Sample
+            Organization Page, user: 2}
+    model: admin.logentry
+    pk: 16
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-03 19:52:06.527618+00:00',
+        change_message: '', content_type: 16, object_id: '15', object_repr: Organization/Space,
+        user: 2}
+    model: admin.logentry
+    pk: 17
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 19:52:44.704428+00:00',
+        change_message: Changed title., content_type: 20, object_id: '15', object_repr: Add
+            an Organization/Space, user: 2}
+    model: admin.logentry
+    pk: 18
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 19:55:37.949485+00:00',
+        change_message: Changed required for Field "Address". Changed required for
+            Field "Postal Code"., content_type: 16, object_id: '15', object_repr: Add
+            an Organization/Space, user: 2}
+    model: admin.logentry
+    pk: 19
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-03 20:05:03.122470+00:00',
+        change_message: '', content_type: 16, object_id: '16', object_repr: Add a
+            residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 20
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 20:06:21.642386+00:00',
+        change_message: Added Field "ApplicationInstructions"., content_type: 16,
+        object_id: '16', object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 21
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 20:11:13.839519+00:00',
+        change_message: Added Field "What we offer". Added Field "Offer Detail". Added
+            Field "What we require". Added Field "Required Language". Added Field
+            "Requirements Detail". Added Field "When"., content_type: 16, object_id: '16',
+        object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 22
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 20:11:15.604753+00:00',
+        change_message: Added Field "What we offer". Added Field "Offer Detail". Added
+            Field "What we require". Added Field "Required Language". Added Field
+            "Requirements Detail". Added Field "When"., content_type: 16, object_id: '16',
+        object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 23
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 20:16:55.008770+00:00',
+        change_message: Added Field "Description". Changed required and _order for
+            Field "ApplicationInstructions". Changed _order for Field "What we offer".
+            Changed label and _order for Field "Offer Details". Changed _order for
+            Field "What we require". Changed required and _order for Field "Required
+            Language". Changed required and _order for Field "Requirements Detail".
+            Changed required and _order for Field "When". Deleted Field "What we offer".
+            Deleted Field "Offer Detail". Deleted Field "What we require". Deleted
+            Field "Required Language". Deleted Field "Requirements Detail". Deleted
+            Field "When"., content_type: 16, object_id: '16', object_repr: Add a residency
+            opportunity, user: 2}
+    model: admin.logentry
+    pk: 24
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-03 20:17:33.726384+00:00',
+        change_message: Changed _order for Field "What we offer". Changed _order for
+            Field "Offer Details". Changed _order for Field "What we require". Changed
+            _order for Field "Required Language". Changed _order for Field "Requirements
+            Detail". Changed _order for Field "When"., content_type: 16, object_id: '16',
+        object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 25
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-03 22:30:55.772137+00:00',
+        change_message: '', content_type: 7, object_id: '3', object_repr: 144.76.17.54,
+        user: 2}
+    model: admin.logentry
+    pk: 26
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 19:47:18.313186+00:00',
+        change_message: Changed name., content_type: 7, object_id: '2', object_repr: 'pistonbot.com:8000',
+        user: 2}
+    model: admin.logentry
+    pk: 27
+-   fields: {action_flag: 3, action_time: !!timestamp '2014-02-07 19:53:02.918109+00:00',
+        change_message: '', content_type: 7, object_id: '2', object_repr: 'pistonbot.com:8000',
+        user: 2}
+    model: admin.logentry
+    pk: 28
+-   fields: {action_flag: 3, action_time: !!timestamp '2014-02-07 19:58:56.561231+00:00',
+        change_message: '', content_type: 20, object_id: '4', object_repr: About /
+            Team, user: 2}
+    model: admin.logentry
+    pk: 29
+-   fields: {action_flag: 3, action_time: !!timestamp '2014-02-07 19:59:02.806722+00:00',
+        change_message: '', content_type: 20, object_id: '5', object_repr: About /
+            History, user: 2}
+    model: admin.logentry
+    pk: 30
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:00:18.985025+00:00',
+        change_message: Changed content., content_type: 21, object_id: '2', object_repr: About,
+        user: 2}
+    model: admin.logentry
+    pk: 31
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:02:11.036802+00:00',
+        change_message: Changed status and content., content_type: 21, object_id: '14',
+        object_repr: Sample Organization Page, user: 2}
+    model: admin.logentry
+    pk: 33
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:02:28.145088+00:00',
+        change_message: Changed status and content., content_type: 21, object_id: '12',
+        object_repr: Offered (notes), user: 2}
+    model: admin.logentry
+    pk: 34
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:02:39.509095+00:00',
+        change_message: Changed status and content., content_type: 21, object_id: '13',
+        object_repr: Required (notes), user: 2}
+    model: admin.logentry
+    pk: 35
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:04:51.468560+00:00',
+        change_message: Changed title., content_type: 16, object_id: '15', object_repr: Add
+            an Organization, user: 2}
+    model: admin.logentry
+    pk: 39
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:06:01.165768+00:00',
+        change_message: Changed content., content_type: 16, object_id: '15', object_repr: Add
+            an Organization, user: 2}
+    model: admin.logentry
+    pk: 40
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:15:25.492376+00:00',
+        change_message: Added Field "Travel Expenses Detail". Added Field "Housing".
+            Added Field "Housing detail". Added Field "Food". Added Field "Food detail".
+            Added Field "Stipend". Added Field "Stipend detail". Added Field "Studio
+            space". Added Field "Studio space detail". Added Field "Tools". Added
+            Field "Tools detail". Changed field_type for Field "What we offer"., content_type: 16,
+        object_id: '16', object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 41
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:16:20.264767+00:00',
+        change_message: Changed label for Field "Travel Expenses"., content_type: 16,
+        object_id: '16', object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 42
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:17:48.978855+00:00',
+        change_message: Changed label and _order for Field "Additional Offer Details".
+            Changed _order for Field "What we require". Changed _order for Field "Requirements
+            Detail". Changed _order for Field "Required Language". Changed _order
+            for Field "When". Changed _order for Field "Travel Expenses Detail". Changed
+            _order for Field "Housing". Changed _order for Field "Housing detail".
+            Changed _order for Field "Food". Changed _order for Field "Food detail".
+            Changed _order for Field "Stipend". Changed _order for Field "Stipend
+            detail". Changed _order for Field "Studio space". Changed _order for Field
+            "Studio space detail". Changed _order for Field "Tools". Changed _order
+            for Field "Tools detail"., content_type: 16, object_id: '16', object_repr: Add
+            a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 43
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:26:09.986196+00:00',
+        change_message: Added Field "Start Date". Added Field "End Date". Added Field
+            "Minimum stay". Added Field "Maximum stay". Added Field "Mentoring". Added
+            Field "Mentoring detail". Added Field "Talks". Added Field "Talks detail".
+            Added Field "Workshops". Added Field "Presentations". Added Field "Presentations
+            detail". Added Field "Class". Added Field "Class detail". Added Field
+            "Hackathon". Added Field "Other residency notes". Changed choices for
+            Field "Travel Expenses". Changed _order for Field "What we require". Changed
+            _order for Field "Requirements Detail". Changed _order for Field "Required
+            Language". Changed _order for Field "When". Changed _order for Field "Travel
+            Expenses Detail". Changed _order for Field "Housing". Changed _order for
+            Field "Housing detail". Changed _order for Field "Food". Changed _order
+            for Field "Food detail". Changed _order for Field "Stipend". Changed _order
+            for Field "Stipend detail". Changed _order for Field "Studio space". Changed
+            _order for Field "Studio space detail". Changed _order for Field "Tools".
+            Changed _order for Field "Tools detail". Changed _order for Field "Additional
+            Offer Details"., content_type: 16, object_id: '16', object_repr: Add a
+            residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 44
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:27:14.692440+00:00',
+        change_message: Changed label for Field "Application Instructions". Deleted
+            Field "What we require"., content_type: 16, object_id: '16', object_repr: Add
+            a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 45
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:29:09.450099+00:00',
+        change_message: 'Added Field "Things we offer". Changed label for Field "Required
+            Language(s?)". Changed required for Field "Other residency notes".', content_type: 16,
+        object_id: '16', object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 46
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:29:37.419990+00:00',
+        change_message: Deleted Field "Other residency notes". Deleted Field "Things
+            we offer"., content_type: 16, object_id: '16', object_repr: Add a residency
+            opportunity, user: 2}
+    model: admin.logentry
+    pk: 47
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:37:26.057958+00:00',
+        change_message: Changed label for Field "Talk(s)". Changed label for Field
+            "Workshop(s)". Changed label for Field "Presentation(s)"., content_type: 16,
+        object_id: '16', object_repr: Add a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 48
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:39:20.663607+00:00',
+        change_message: No fields changed., content_type: 16, object_id: '16', object_repr: Add
+            a residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 49
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:42:32.154042+00:00',
+        change_message: Added Field "Phone". Added Field "Picture". Changed required
+            for Field "Website". Changed required for Field "State". Changed label
+            and required for Field "About us"., content_type: 16, object_id: '15',
+        object_repr: Add an Organization, user: 2}
+    model: admin.logentry
+    pk: 50
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:43:07.062257+00:00',
+        change_message: Changed _order for Field "Country". Changed _order for Field
+            "About us". Changed _order for Field "Phone". Changed _order for Field
+            "Picture"., content_type: 16, object_id: '15', object_repr: Add an Organization,
+        user: 2}
+    model: admin.logentry
+    pk: 51
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-07 20:49:07.006240+00:00',
+        change_message: Changed _order for Field "Picture". Changed _order for Field
+            "Phone"., content_type: 16, object_id: '15', object_repr: Add an Organization,
+        user: 2}
+    model: admin.logentry
+    pk: 52
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-10 17:30:42.369062+00:00',
+        change_message: Changed content and in_menus., content_type: 21, object_id: '14',
+        object_repr: Sample Organization Page, user: 2}
+    model: admin.logentry
+    pk: 53
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-10 17:31:00.513077+00:00',
+        change_message: Changed content and in_menus., content_type: 21, object_id: '13',
+        object_repr: Required (notes), user: 2}
+    model: admin.logentry
+    pk: 54
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:06:47.314686+00:00',
+        change_message: Changed title., content_type: 16, object_id: '15', object_repr: Add
+            your Organization, user: 2}
+    model: admin.logentry
+    pk: 57
+-   fields: {action_flag: 3, action_time: !!timestamp '2014-02-14 23:07:08.021281+00:00',
+        change_message: '', content_type: 20, object_id: '8', object_repr: Gallery,
+        user: 2}
+    model: admin.logentry
+    pk: 58
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:09:33.472210+00:00',
+        change_message: Changed title., content_type: 16, object_id: '16', object_repr: Add
+            your organizations residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 59
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:09:49.936421+00:00',
+        change_message: Changed title., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 60
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:13:47.209914+00:00',
+        change_message: Changed in_menus and login_required., content_type: 16, object_id: '16',
+        object_repr: Add your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 61
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:14:37.573094+00:00',
+        change_message: Changed login_required., content_type: 16, object_id: '15',
+        object_repr: Add your Organization, user: 2}
+    model: admin.logentry
+    pk: 62
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:17:26.489524+00:00',
+        change_message: Changed status and login_required., content_type: 21, object_id: '1',
+        object_repr: Blog, user: 2}
+    model: admin.logentry
+    pk: 63
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:17:51.936625+00:00',
+        change_message: Changed in_menus., content_type: 21, object_id: '1', object_repr: Blog,
+        user: 2}
+    model: admin.logentry
+    pk: 64
+-   fields: {action_flag: 3, action_time: !!timestamp '2014-02-14 23:18:57.362653+00:00',
+        change_message: '', content_type: 20, object_id: '6', object_repr: Contact
+            / Legals, user: 2}
+    model: admin.logentry
+    pk: 65
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:21:35.760254+00:00',
+        change_message: Changed login_required., content_type: 16, object_id: '15',
+        object_repr: Add your Organization, user: 2}
+    model: admin.logentry
+    pk: 66
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:35:42.814302+00:00',
+        change_message: Changed content., content_type: 16, object_id: '15', object_repr: Add
+            your Organization, user: 2}
+    model: admin.logentry
+    pk: 68
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:46:05.669222+00:00',
+        change_message: Changed in_menus., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 69
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:48:55.332693+00:00',
+        change_message: Changed in_menus., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 70
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:52:38.639741+00:00',
+        change_message: Changed response., content_type: 16, object_id: '15', object_repr: Add
+            your Organization, user: 2}
+    model: admin.logentry
+    pk: 71
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-14 23:54:09.637590+00:00',
+        change_message: Changed in_menus., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 72
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:00:05.702274+00:00',
+        change_message: Added Field "Hackathon". Added Field "Workshop details". Changed
+            label for Field "Residency Description". Changed label for Field "Travel
+            Expenses details". Changed label for Field "Housing details". Changed
+            label for Field "Food details". Changed label for Field "Stipend details".
+            Changed label for Field "Studio space details". Changed label for Field
+            "Tools details". Changed label for Field "Additional Offer details". Changed
+            label for Field "Mentoring". Changed label for Field "Talk details". Changed
+            _order for Field "Presentation(s)". Changed label and _order for Field
+            "Presentations details". Changed _order for Field "Class". Changed label
+            and _order for Field "Class details". Changed label and _order for Field
+            "Hackathon details". Changed _order for Field "Requirements Detail".,
+        content_type: 16, object_id: '16', object_repr: Add your organization's residency
+            opportunity, user: 2}
+    model: admin.logentry
+    pk: 73
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:00:38.889156+00:00',
+        change_message: Changed label for Field "Mentoring details". Changed label
+            for Field "Requirements detail"., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 74
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:03:32.884239+00:00',
+        change_message: 'Changed label for Field "Required Language(s)?". Changed
+            help_text for Field "Start Date". Changed help_text for Field "End Date".',
+        content_type: 16, object_id: '16', object_repr: Add your organization's residency
+            opportunity, user: 2}
+    model: admin.logentry
+    pk: 75
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:04:32.889061+00:00',
+        change_message: Changed label and _order for Field "Additional Temporal details".
+            Changed _order for Field "Start Date". Changed _order for Field "End Date".
+            Changed _order for Field "Minimum stay". Changed _order for Field "Maximum
+            stay"., content_type: 16, object_id: '16', object_repr: Add your organization's
+            residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 76
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:05:18.600684+00:00',
+        change_message: Changed label for Field "Additional details about residency
+            dates"., content_type: 16, object_id: '16', object_repr: Add your organization's
+            residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 77
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:06:02.590222+00:00',
+        change_message: Changed help_text for Field "Additional details about residency
+            dates"., content_type: 16, object_id: '16', object_repr: Add your organization's
+            residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 78
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:08:11.567631+00:00',
+        change_message: Changed help_text for Field "Start Date"., content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 79
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:09:00.794674+00:00',
+        change_message: Changed help_text for Field "Start Date". Changed help_text
+            for Field "End Date"., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 80
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:09:24.467615+00:00',
+        change_message: Changed help_text for Field "End Date"., content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 81
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-15 00:12:08.202982+00:00',
+        change_message: Changed required for Field "Workshop details". Changed label
+            for Field "Class(es)". Changed label for Field "Class(es) details". Changed
+            label and required for Field "Hackathon(s)". Changed label for Field "Hackathon(s)
+            details". Changed label for Field "Other Requirements"., content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 82
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 22:47:22.405483+00:00',
+        change_message: Changed label for Field "State/Province (if applicable)".
+            Changed label for Field "Postal Code (if applicable)". Changed _order
+            for Field "Contact Email". Changed _order for Field "Phone". Changed _order
+            for Field "Country"., content_type: 16, object_id: '15', object_repr: Add
+            your Organization, user: 2}
+    model: admin.logentry
+    pk: 83
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 22:58:57.763352+00:00',
+        change_message: Added Field "HEADER1"., content_type: 16, object_id: '16',
+        object_repr: Add your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 84
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 23:04:17.897327+00:00',
+        change_message: Changed default for Field "Travel Expenses"., content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 85
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 23:14:55.137170+00:00',
+        change_message: 'Changed _order for Field "Travel Expenses". Changed _order
+            for Field "Travel Expenses details". Changed _order for Field "Housing".
+            Changed _order for Field "Housing details". Changed _order for Field "Food".
+            Changed _order for Field "Food details". Changed _order for Field "Stipend".
+            Changed _order for Field "Stipend details". Changed _order for Field "Studio
+            space". Changed _order for Field "Studio space details". Changed _order
+            for Field "Tools". Changed _order for Field "Tools details". Changed _order
+            for Field "Additional Offer details". Changed _order for Field "Required
+            Language(s)?". Changed _order for Field "Start Date". Changed _order for
+            Field "End Date". Changed _order for Field "Minimum stay". Changed _order
+            for Field "Maximum stay". Changed _order for Field "Additional details
+            about residency dates". Changed _order for Field "Mentoring". Changed
+            _order for Field "Mentoring details". Changed _order for Field "Talk(s)".
+            Changed _order for Field "Talk details". Changed _order for Field "Workshop(s)".
+            Changed _order for Field "Workshop details". Changed _order for Field
+            "Presentation(s)". Changed _order for Field "Presentations details". Changed
+            _order for Field "Class(es)". Changed _order for Field "Class(es) details".
+            Changed _order for Field "Hackathon(s)". Changed _order for Field "Hackathon(s)
+            details". Changed _order for Field "Other Requirements". Changed help_text
+            and _order for Field "HEADER1".', content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 86
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 23:17:18.343788+00:00',
+        change_message: 'Added Field "HEADER1". Changed _order for Field "Residency
+            Description". Changed _order for Field "Application Instructions". Changed
+            label and _order for Field "HEADER2". Changed _order for Field "Travel
+            Expenses". Changed _order for Field "Travel Expenses details". Changed
+            _order for Field "Housing". Changed _order for Field "Housing details".
+            Changed _order for Field "Food". Changed _order for Field "Food details".
+            Changed _order for Field "Stipend". Changed _order for Field "Stipend
+            details". Changed _order for Field "Studio space". Changed _order for
+            Field "Studio space details". Changed _order for Field "Tools". Changed
+            _order for Field "Tools details". Changed _order for Field "Additional
+            Offer details". Changed _order for Field "Required Language(s)?". Changed
+            _order for Field "Start Date". Changed _order for Field "End Date". Changed
+            _order for Field "Minimum stay". Changed _order for Field "Maximum stay".
+            Changed _order for Field "Additional details about residency dates". Changed
+            _order for Field "Mentoring". Changed _order for Field "Mentoring details".
+            Changed _order for Field "Talk(s)". Changed _order for Field "Talk details".
+            Changed _order for Field "Workshop(s)". Changed _order for Field "Workshop
+            details". Changed _order for Field "Presentation(s)". Changed _order for
+            Field "Presentations details". Changed _order for Field "Class(es)". Changed
+            _order for Field "Class(es) details". Changed _order for Field "Hackathon(s)".
+            Changed _order for Field "Hackathon(s) details". Changed _order for Field
+            "Other Requirements".', content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 2}
+    model: admin.logentry
+    pk: 87
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-18 23:27:08.189752+00:00',
+        change_message: 'Added Field "HEADER3". Changed _order for Field "Required
+            Language(s)?". Changed _order for Field "Start Date". Changed _order for
+            Field "End Date". Changed _order for Field "Minimum stay". Changed _order
+            for Field "Maximum stay". Changed _order for Field "Additional details
+            about residency dates". Changed _order for Field "Mentoring". Changed
+            _order for Field "Mentoring details". Changed _order for Field "Talk(s)".
+            Changed _order for Field "Talk details". Changed _order for Field "Workshop(s)".
+            Changed _order for Field "Workshop details". Changed _order for Field
+            "Presentation(s)". Changed _order for Field "Presentations details". Changed
+            _order for Field "Class(es)". Changed _order for Field "Class(es) details".
+            Changed _order for Field "Hackathon(s)". Changed _order for Field "Hackathon(s)
+            details". Changed _order for Field "Other Requirements".', content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 88
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-21 20:40:30.760514+00:00',
+        change_message: Changed label for Field "Street Address"., content_type: 16,
+        object_id: '15', object_repr: Add your Organization, user: 2}
+    model: admin.logentry
+    pk: 89
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-21 20:46:53.933111+00:00',
+        change_message: Changed default for Field "Travel Expenses"., content_type: 16,
+        object_id: '16', object_repr: Add your organization's residency opportunity,
+        user: 2}
+    model: admin.logentry
+    pk: 90
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-24 02:12:28.739102+00:00',
+        change_message: Changed content., content_type: 16, object_id: '16', object_repr: Add
+            your organization's residency opportunity, user: 4}
+    model: admin.logentry
+    pk: 91
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-25 21:14:11.748828+00:00',
+        change_message: '', content_type: 37, object_id: '17', object_repr: Test organization
+            title, user: 2}
+    model: admin.logentry
+    pk: 92
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-25 21:15:44.588885+00:00',
+        change_message: No fields changed., content_type: 37, object_id: '17', object_repr: Test
+            organization title, user: 2}
+    model: admin.logentry
+    pk: 93
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-25 22:20:40.185261+00:00',
+        change_message: '', content_type: 32, object_id: '18', object_repr: first
+            residency, user: 2}
+    model: admin.logentry
+    pk: 94
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-25 22:21:30.932275+00:00',
+        change_message: '', content_type: 32, object_id: '19', object_repr: second
+            residency, user: 2}
+    model: admin.logentry
+    pk: 95
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-25 23:36:41.934371+00:00',
+        change_message: '', content_type: 32, object_id: '20', object_repr: third
+            residency, user: 2}
+    model: admin.logentry
+    pk: 96
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-25 23:58:03.653623+00:00',
+        change_message: No fields changed., content_type: 32, object_id: '20', object_repr: third
+            residency, user: 2}
+    model: admin.logentry
+    pk: 97
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-26 00:12:31.222223+00:00',
+        change_message: '', content_type: 21, object_id: '21', object_repr: List of
+            Residencies, user: 2}
+    model: admin.logentry
+    pk: 98
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 04:56:39.039852+00:00',
+        change_message: Changed title., content_type: 21, object_id: '21', object_repr: List
+            of Residency Opportunities, user: 2}
+    model: admin.logentry
+    pk: 99
+-   fields: {action_flag: 1, action_time: !!timestamp '2014-02-26 04:57:05.623576+00:00',
+        change_message: '', content_type: 21, object_id: '22', object_repr: List of
+            Organizations, user: 2}
+    model: admin.logentry
+    pk: 100
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:01:04.399122+00:00',
+        change_message: Changed in_menus., content_type: 32, object_id: '18', object_repr: first
+            residency, user: 2}
+    model: admin.logentry
+    pk: 101
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:01:17.159397+00:00',
+        change_message: Changed in_menus., content_type: 32, object_id: '20', object_repr: third
+            residency, user: 2}
+    model: admin.logentry
+    pk: 102
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:01:32.281319+00:00',
+        change_message: Changed in_menus., content_type: 32, object_id: '19', object_repr: second
+            residency, user: 2}
+    model: admin.logentry
+    pk: 103
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:02:01.985419+00:00',
+        change_message: Changed in_menus., content_type: 37, object_id: '17', object_repr: Test
+            organization title, user: 2}
+    model: admin.logentry
+    pk: 104
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:02:28.809211+00:00',
+        change_message: Changed content and in_menus., content_type: 21, object_id: '12',
+        object_repr: Offered (notes), user: 2}
+    model: admin.logentry
+    pk: 105
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 05:02:42.466557+00:00',
+        change_message: Changed content and in_menus., content_type: 21, object_id: '13',
+        object_repr: Required (notes), user: 2}
+    model: admin.logentry
+    pk: 106
+-   fields: {action_flag: 2, action_time: !!timestamp '2014-02-26 18:10:31.007325+00:00',
+        change_message: Changed domain., content_type: 7, object_id: '3', object_repr: www.hackerinresidence.org,
+        user: 2}
+    model: admin.logentry
+    pk: 107
