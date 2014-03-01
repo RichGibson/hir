@@ -6,6 +6,10 @@ from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
 
+# my page_processors worked fine, then stopped. This magic
+# was suggested. And appears to work.
+from mezzanine.pages import page_processors
+page_processors.autodiscover()
 
 admin.autodiscover()
 

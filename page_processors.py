@@ -14,29 +14,57 @@ from .models import Organization, Residency
 class OrganizationForm(ModelForm):
     class Meta:
         model = Organization
-        fields=['name', 'website', 'street_address', 'city', 'state',
+        fields=['title','name', 'website', 'street_address', 'city', 'state',
                 'postal_code', 'country', 'email', 'phone', 'about']
+        # these labels are not being used :-/
+        labels= {
+            'name':'Organzation Name',
+            'website':'Website',
+            'street_address':'Street Address',
+            'city':'City',
+            'state':'State if applicable',
+            'postal_code':'Postal Code if applicable',
+            'country':'Country',
+            'email':'Contact Email',
+            'phone':'Phone',
+            'about':'About our organization',
+        }
+    #print >>sys.stderr,"what?"
 
+
+class ResidencyForm(ModelForm):
+    class Meta:
+        model=Residency
+        #exclude =['title','HEADER1','HEADER2','HEADER3']
+
+
+@processor_for('add-a-residency-opportunity')
+def residency_form(request, page):
+    print >>sys.stderr, "in residency_form"
+    form = ResidencyForm()
+    if request.method == "POST":
+        form = ResidencyForm(request.POST)
+        if form.is_valid():
+            # process form, like save data
+            form.save()
+            redirect = request.path + "?submitted=true"
+            return HttpResponseRedirect(redirect)
+    return {"form": form}
 
 
 @processor_for('organization')
 def organization_form(request, page):
     print >>sys.stderr, "in organization_form"
-    orgform = OrganizationForm()
+    form = OrganizationForm()
     if request.method == "POST":
-        orgform = OrganizationForm(request.POST)
-        if orgform.is_valid():
+        form = OrganizationForm(request.POST)
+        if form.is_valid():
             # process form, like save data
-            orgform.save()
+            form.save()
             redirect = request.path + "?submitted=true"
             return HttpResponseRedirect(redirect)
-    return {"orgform": orgform}
+    return {"form": form}
 
-
-#XXXrocessor_for(Organization)
-def organization_display(request, page):
-    reslist = Residency.objects.filter(organization=page.id)
-    return {"reslist": reslist}
 
 @processor_for('list-of-organizations')
 def organization_list(request,page):
@@ -46,6 +74,7 @@ def organization_list(request,page):
 
 @processor_for('list-of-residencies')
 def residency_list(request,page):
+    print >>sys.stderr,"residency_list for list-of-residencies"
     reslist = Residency.objects.all()
     return {"reslist": reslist}
 

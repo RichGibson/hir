@@ -41,16 +41,16 @@ class RequiredSkeleton(models.Model):
 
 
 class Organization(Page, RichText):
-    name = models.CharField(max_length=200)
-    website = models.CharField(max_length=100, blank=True, null=True,)
-    street_address = models.CharField(max_length=200, blank=True, null=True,)
-    city = models.CharField(max_length=30, blank=True, null=True,)
-    state = models.CharField(max_length=30, blank=True, null=True,)
-    postal_code = models.CharField(max_length=30, blank=True, null=True,)
-    country = models.CharField(max_length=30, blank=True, null=True,)
-    email = models.CharField(max_length=30)
-    phone = models.CharField(max_length=30, blank=True, null=True,)
-    about = models.TextField(blank=True, null=True,)
+    name = models.CharField(max_length=200, help_text="The name of your organization",editable=True)
+    website = models.CharField(max_length=100, blank=True, null=True,help_text="")
+    street_address = models.CharField(max_length=200, blank=True, null=True,help_text="")
+    city = models.CharField(max_length=30, blank=True, null=True,help_text="")
+    state = models.CharField(max_length=30, blank=True, null=True,help_text="Where applicable")
+    postal_code = models.CharField(max_length=30, blank=True, null=True,help_text="Where applicable")
+    country = models.CharField(max_length=30, blank=True, null=True,help_text="")
+    email = models.CharField(max_length=30,help_text="A contact email for Residency issues")
+    phone = models.CharField(max_length=30, blank=True, null=True,help_text="optional")
+    about = models.TextField(blank=True, null=True,help_text="Tell us about your fine space!")
 
 
 

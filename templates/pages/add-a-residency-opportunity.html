@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block main %}
-<h2>Add a new Organization</h2>
+<h2>Add a new Residency</h2>
 <form method="post" action="">
     {% csrf_token %}
     {{form.management_form}}
@@ -33,20 +33,29 @@
     {% endif %}
 
     {% for field in form %}
-        <div id="{{ field.auto_id }}_container">
-            <div>
-                {{ field.label_tag }} 
-                {{ field.help_text }}
-                <br>
-                {{ field }}
+        {% if "HEADER" in field.label  %}
+            <hr>
+            <h2>{{ field.help_text }}</h2>
+        {% else %}
+            <div id="{{ field.auto_id }}_container">
+                <div>
+                    {{ field.help_text }}
+                    {% if 'check' in field.name %}
+                        <!-- check the field, to put lable: checkbox: and field on same line -->
+                        {{ field.label_tag }} 
+                    {% endif %}
+                    <br>
+                    {{ field }}
+                </div>
+                <div id="{{ field.auto_id }}_errors">
+                    {{ field.errors }}
+                </div>
             </div>
-            <div id="{{ field.auto_id }}_errors">
-                {{ field.errors }}
-            </div>
-        </div>
+        {% endif %}
+
 
     {% endfor %}
-    <input id="save_organization" type="submit" value="Save" />
+    <input id="save_residency" type="submit" value="Save" />
 </form>
 
 
