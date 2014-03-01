@@ -22,7 +22,7 @@ class test_stuff(TestCase):
     def test_start(self):
         self.assertEqual(1,1)
 
-    def test_home(self):
+    def FOOtest_home(self):
         """ can we fetch the home page? Do something reasonable?"""
         c = Client()
         response=c.get('/')
@@ -38,8 +38,17 @@ class test_stuff(TestCase):
     def test_list_of_residencies(self):
         """ we should have some residencies listed. """
         c = Client()
-        response = c.get('http://www.hackerinresidence.org/list-of-residencies/')
-        #self.assertEqual(len(response.context['reslist']), 5)
+        response = c.get('/list-of-residencies/')
+        print >>sys.stderr, "=============================x=x=x==x=x=x=x="
+
+        print >>sys.stderr, response.context
+        print >>sys.stderr, "=============================x=x=x==x=x=x=x="
+        print >>sys.stderr, "response.status_code?",response.status_code
+
+        #print >>sys.stderr, "reslist?",response.context['reslist']
+        print >>sys.stderr, "response.status_code?",response.status_code
+        print >>sys.stderr, "foobar"
+        self.assertEqual(len(response.context['reslist']), 5)
 
 
 

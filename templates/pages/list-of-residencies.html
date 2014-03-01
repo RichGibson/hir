@@ -23,7 +23,7 @@
 
 
 {% for res in reslist %}
-    <a href="/{{res.slug}}">{{res.title}}</a> 
+    <a href="/show-residency?res={{res.slug}}">{{res.title}}</a> 
     {{res.organization.title}}: 
     {{res.organization.city}},
     {{res.organization.country}}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load mezzanine_tags keyword_tags %}
+{% load extras %}
+
+{% block meta_title %}{{ page.meta_title }}{% endblock %}
+
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{{ page.description }}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+{% editable page.title %}{{ page.title }}{% endeditable %}
+{% endblock %}
+
+{% block main %}
+<h2>About our organization</h2>
+{% include "pages/organization-detail.html" %}
+
+<h2>About the residency</h2>
+
+<label class="control-label">About the Residency:</label>
+{{ residency.about }}<br>
+
+<label class="control-label">Application Instructions:</label>
+{{ residency.application_instructions }}<br>
+
+<h2>What we offer</h2>
+<label class="control-label">Application Instructions:</label>
+{{ residency.application_instructions }}<br>
+
+{% check_magic "Travel Expenses:" residency.offer_travel_check residency.offer_travel_detail  %}
+{% check_magic "Housing:" residency.offer_housing_check residency.offer_housing_detail  %}
+{% check_magic "Food:" residency.offer_food_check       residency.offer_food_detail  %}
+{% check_magic "Stipend:" residency.offer_stipend_check residency.offer_stipend_detail  %}
+{% check_magic "Studio:" residency.offer_studio_check residency.offer_studio_detail  %}
+{% check_magic "Tools:" residency.offer_tools_check residency.offer_tools_detail  %}
+
+
+<label class="control-label">Additional offer details:</label>
+{{ residency.offer_additional_details}}
+
+<h2>What we require</h2>
+
+
+<label class="control-label">Required language(s):</label>
+{{ residency.require_languge}}<br>
+
+(date requirements)<br>
+
+{% check_magic "Mentoring:" residency.offer_mentoring_check residency.offer_mentoring_detail  %}
+{% check_magic "Talk:" residency.offer_talk_check residency.offer_talk_detail  %}
+{% check_magic "Workshop:" residency.offer_workshop_check residency.offer_workshop_detail  %}
+{% check_magic "Presentation:" residency.offer_presentation_check residency.offer_presentation_detail  %}
+{% check_magic "Class:" residency.offer_class_check residency.offer_class_detail  %}
+{% check_magic "Hackathon:" residency.offer_hackathon_check residency.offer_hackathon_detail  %}
+
+<hr>
+{% if not request.user.is_authenticated %}
+{% include "accounts/includes/user_panel.html" %}
+{% endif %}
+
+{% if request.user.is_authenticated %}
+{% endif %}
+
+
+{% endblock %}

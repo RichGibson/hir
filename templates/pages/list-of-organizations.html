@@ -21,9 +21,8 @@
 
 {% block main %}
 
-
 {% for org in orglist %}
-    <a href="/show-organization/{{org.slug}}">{{org.title}}</a> 
+    <a href="/show-organization?org={{org.slug}}">{{org.title}}</a> 
     {{org.title}}: 
     {{org.city}},
     {{org.country}}

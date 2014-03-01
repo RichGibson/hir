@@ -20,43 +20,7 @@
 {% endblock %}
 
 {% block main %}
-<form method="post" action="">
-    {{orgform.management_form}}
-    {{orgform}}
-</form>
-
-______
-display code<br>
-<label class="control-label">Name:</label>
-{{ page.organization.name }}<br>
-
-<label class="control-label">Website:</label>
-{{ page.organization.website }}<br>
-
-<label class="control-label">Street Address:</label>
-{{ page.organization.street_address }}<br>
-
-<label class="control-label">City:</label>
-{{ page.organization.city }} 
-
-<label class="control-label">State:</label>
-{{ page.organization.state}} 
-
-<label class="control-label">Postal Code:</label>
-{{ page.organization.postal_code}}<br>
-
-<label class="control-label">Country:</label>
-{{ page.organization.country}}<br>
-
-<label class="control-label">Contact email:</label>
-{{ page.organization.email}} 
-
-<label class="control-label">Contact phone:</label>
-{{ page.organization.phone}}<br>
-
-<label class="control-label">About our organization:</label>
-{{ page.organization.about }}
-
+{% include "pages/organization-detail.html" %}
 
 <hr>
 {% if not request.user.is_authenticated %}
@@ -65,7 +29,7 @@ If this is your organizations and you'd like to add a residency opportunity.
 {% endif %}
 
 {% if request.user.is_authenticated %}
-<a href="">Add a residency opportunity!</a>
+<a href="/add-a-residency-opportunity?org={{org.slug}}">Add a residency opportunity!</a>
 {% endif %}
 
 <hr>
@@ -77,7 +41,7 @@ If this is your organizations and you'd like to add a residency opportunity.
 
 <ul>
 {% for res in reslist %}
-    <li><a href="/{{res.slug}}">{{res.title}}</a>
+    <li><a href="/show-residency?res={{res.slug}}">{{res.title}}</a>
 {% endfor %}
 </ul>
 

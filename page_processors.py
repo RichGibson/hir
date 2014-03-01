@@ -19,7 +19,7 @@ class OrganizationForm(ModelForm):
 
 
 
-@processor_for(Organization)
+@processor_for('organization')
 def organization_form(request, page):
     print >>sys.stderr, "in organization_form"
     orgform = OrganizationForm()
@@ -33,7 +33,7 @@ def organization_form(request, page):
     return {"orgform": orgform}
 
 
-#XXXprocessor_for(Organization)
+#XXXrocessor_for(Organization)
 def organization_display(request, page):
     reslist = Residency.objects.filter(organization=page.id)
     return {"reslist": reslist}
@@ -41,18 +41,51 @@ def organization_display(request, page):
 @processor_for('list-of-organizations')
 def organization_list(request,page):
     orglist = Organization.objects.all()
+    print >>sys.stderr,"organization_list for list-of-organizations"
     return {"orglist": orglist}
 
 @processor_for('list-of-residencies')
 def residency_list(request,page):
     reslist = Residency.objects.all()
+    return {"reslist": reslist}
+
+@processor_for('show-residency')
+def show_residency(request,page):
+    print >>sys.stderr,"show-residency"
+
+    slug=request.GET.get('res',None)
+    print >>sys.stderr,"slug: %r", slug
+    res=Residency.objects.filter(slug=slug)[0]
+
+    org=res.organization
+    return {"residency": res, "org": org}
+
+
+@processor_for('add-a-residency-opportunity')
+def show_organization(request,page):
+    orgslug=request.GET.get('org',None)
+    print >>sys.stderr, "add-a-residency-opportunity org:%r" % orgslug
+    return
+
 
 @processor_for('show-organization')
+def show_organization(request,page):
     # this is where we could do the offer/requires formatting, but 
     # I am doing it in a template_tag. 
     #for res in reslist:
     #    pass    
-    return {"reslist": reslist}
+    print >>sys.stderr,"show-organization"
+
+    slug=request.GET.get('org',None)
+    org=Organization.objects.filter(slug=slug)[0]
+
+    print >>sys.stderr, "org?"
+    print >>sys.stderr, org.name
+    print >>sys.stderr, org.website
+    print >>sys.stderr, org.city
+    print >>sys.stderr, org.country
+    reslist = Residency.objects.all()
+    return {"reslist": reslist, "org":org}
 
 #### this is from the docs.http://mezzanine.jupo.org/docs/content-architecture.html
 #### basically exactly what I need :-/

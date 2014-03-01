@@ -186,4 +186,10 @@ This works
 python ./manage.py loaddata fixtures/hir.json 
 
 But having fixtures = ['hir.json'] in my test class doesn't work.
+....
+Testing Client
+
+In [1]: from django.test.client import Client
+In [2]: c = Client()
+In [3]: response=c.get('/list-of-residencies/')
 

@@ -69,6 +69,7 @@ def return_formentry(slug):
 
 def list(request, slug=None):
     rv = return_formentry(slug)
+    print >>sys.stderr,"views.py list()"
     return render_to_response('list.html', {'rv':rv, 'entrylist': rv['entrylist']})
 
 def rawlist(request, slug=None):
