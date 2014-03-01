@@ -1,0 +1,35 @@
+{% load extras %}
+<h2>Raw list for form with slug: {{rv.slug}}</h2>
+
+{% for entry in rv %}
+    Forms?
+    {{entry.slug}}
+    <hr>
+{% endfor %}
+
+<table>
+{% for entry in entrylist %}
+    <!-- name?{{ entry.name }}<br>
+    website?{{ entry.website }}<br> -->
+
+    <tr>
+    {% for field,value in entry.items %}
+        <td>{{field}} {{value}}</td>
+    {% endfor %}
+    </tr>
+
+    <!-- a bunch of confusing and possibly silly code
+    {{ entry }}
+    {% for field in entry %}
+        field: {{field}} <br>
+        this will dereference 'name' out of 'entry' but so will entry.name
+        there is some trick here that I am missing to just walk all of the fields 
+        in a dictionary. eeek to me.
+        {{entry|get_item:'name'}} 
+        
+        {{entry|get_item:field}}
+    -->
+
+    {% endfor %}
+{% endfor %}
+</table>

@@ -38,7 +38,7 @@ urlpatterns += patterns('',
     url(r'^list/(.*[^/])','hir.views.list', name='list'),
     url(r'^rawlist/(.*[^/])','hir.views.rawlist', name='list'),
 
-    url(r'^organization/(.*[^/])?','hir.views.organization', name='list'),
+    #url(r'^show/organization/(.*[^/])?','hir.views.showorganization', name='list'),
 
 
 

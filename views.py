@@ -15,6 +15,8 @@ from django.template import RequestContext
 from mezzanine.forms.models import *
 from mezzanine.utils.urls import admin_url, slugify, unique_slug
 
+#from mezzanine.pages.models import Page
+
 
 import sys
 
@@ -79,8 +81,8 @@ def rawlist(request, slug=None):
     #return render_to_response('rawlist.html', {'rv':rv, 'entrylist': None})
     return render_to_response('rawlist.html', {'rv':rv, 'entrylist': rv['entrydictlist']})
 
-def organization(request, organization=None):
-    rv = Pages.objects.all()
+def showorganization(request, organization=None):
+    rv = Page.objects.all()
     print >>sys.stderr,"organization, name: ", organization
     #return render_to_response('pages/show_organization.html', {'rv':rv})
     return render_to_response('pages/show_organization.html')

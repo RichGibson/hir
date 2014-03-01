@@ -46,6 +46,8 @@ def organization_list(request,page):
 @processor_for('list-of-residencies')
 def residency_list(request,page):
     reslist = Residency.objects.all()
+
+@processor_for('show-organization')
     # this is where we could do the offer/requires formatting, but 
     # I am doing it in a template_tag. 
     #for res in reslist:
