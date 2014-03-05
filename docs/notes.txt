@@ -192,4 +192,6 @@ Testing Client
 In [1]: from django.test.client import Client
 In [2]: c = Client()
 In [3]: response=c.get('/list-of-residencies/')
+In [6]: response.status_code
+
 
