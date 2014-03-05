@@ -10,14 +10,30 @@ from django.http import HttpResponseRedirect
 from mezzanine.pages.page_processors import processor_for
 from .models import Organization, Residency
 
-
 class OrganizationForm(ModelForm):
+    #about = forms.CharField(label="foobar")
+    print >>sys.stderr, "organization form up top"
     class Meta:
+        print >>sys.stderr, "organization form up top meta"
         model = Organization
+        # the form displays the field in the order of this array.
         fields=['title','name', 'website', 'street_address', 'city', 'state',
-                'postal_code', 'country', 'email', 'phone', 'about']
-        # these labels are not being used :-/
+                'postal_code', 'country', 'email', 'phone', ]
+                #'postal_code', 'country', 'email', 'phone', 'about']
+
+        print >>sys.stderr,"before widgets"
+        widgets = {
+            'title': Textarea(attrs={'size':'100'}),
+            'name': Textarea(attrs={'size':'10'}),
+            'about': Textarea(attrs={'cols':'150', 'rows':'8'}),
+        } 
+        print >>sys.stderr,"widgets",widgets
+        # i have seen examples with the numbers in quotes, and not in quotes.
+        #'about': Textarea(attrs={'cols':'150', 'rows':'8'}),
+        # these labels are not being used. The help_text from models is being
+        # used.
         labels= {
+            'title':'title',
             'name':'Organzation Name',
             'website':'Website',
             'street_address':'Street Address',
@@ -27,8 +43,8 @@ class OrganizationForm(ModelForm):
             'country':'Country',
             'email':'Contact Email',
             'phone':'Phone',
-            'about':'About our organization',
         }
+            #'about':'About our organization',
     #print >>sys.stderr,"what?"
 
 
@@ -52,10 +68,11 @@ def residency_form(request, page):
     return {"form": form}
 
 
-@processor_for('organization')
+@processor_for('add-organization')
 def organization_form(request, page):
     print >>sys.stderr, "in organization_form"
     form = OrganizationForm()
+    print >>sys.stderr, "after form=in organization_form"
     if request.method == "POST":
         form = OrganizationForm(request.POST)
         if form.is_valid():

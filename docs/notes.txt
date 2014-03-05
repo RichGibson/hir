@@ -1,11 +1,34 @@
 
-Current:
+Wed Mar 5:
 -create organization form
+-clean up organization form
+-push public
+-send mitch an email
 -create residency form
--figure out how to show formdata on a page
--make the 'organization' page showing (noneditable) data from a form
-including the organization data, and (for now) all residencies attached
-to thatorganization.
+-clean up residency form
+-extend tests
+
+issue : add an organization not calling the page_processor.
+add a residency is. WTF?
+Answer: mezzanine has some issues :-/ Changed slug of 'organization' page
+to 'add-organization' and life is better.
+
+Now: list of organizations is failing.
+And add-organization is not displaying title.
+print >>sys.stderr, in various page_processor places are not being
+calle consistenty. Ie. the dang page_processor code is only sometimes
+being called.
+
+Answer: set Debug=True in settings. Mezzanine silently 
+ignores errors in the page_processor. Fuck that is annoying.
+
+This is just so annoying. I make changes to code, but they are not
+actually run - some default behavior gets run and it is unclear why
+or when.
+
+
+
+
 
 
 
@@ -14,11 +37,9 @@ fixed-do wording changes
 fixed-why do 144.77.17.54:8000 and pistonbot.com:8000 look different?
 fixed --pistonbot has the side bars with add org/residencie.
 -How to show formdata on a page:
--show list of orgs
--show list of residencies
+fixed-show list of orgs
+fixed-show list of residencies
 
-
--page name at top left almost totally hidden?
 
 This has some tricks:
 https://groups.google.com/forum/#!topic/mezzanine-users/FvCUK9k1NRM

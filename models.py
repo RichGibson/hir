@@ -50,6 +50,7 @@ class Organization(Page, RichText):
     country = models.CharField(max_length=30, blank=True, null=True,help_text="")
     email = models.CharField(max_length=30,help_text="A contact email for Residency issues")
     phone = models.CharField(max_length=30, blank=True, null=True,help_text="optional")
+    #phone = models.CharField(max_length=30, blank=True, null=True,help_text="optional")
     about = models.TextField(blank=True, null=True,help_text="Tell us about your fine space!")
 
 
