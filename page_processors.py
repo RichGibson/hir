@@ -4,7 +4,8 @@
 import sys
 
 from django import forms
-from django.forms import ModelForm
+from django.forms import ModelForm, Textarea
+
 from django.http import HttpResponseRedirect
 
 from mezzanine.pages.page_processors import processor_for

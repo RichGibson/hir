@@ -1,4 +1,25 @@
 
+
+Tue April 8th, tasks.
+-
+Talk
+Thur 10th at 12:00
+-database display organizations
+
+
+Sat 12th at 12:00
+Tue 15th at 12:00
+
+-"we need to get this going because the Bejeing people have been on hold"
+
+-get it running on home machine and pistonbot
+-why don't orgs show?
+-think about moving out of the 'page' framework, it is too freaking annoying.
+
+
+
+
+
 Wed Mar 5:
 -create organization form
 -clean up organization form
