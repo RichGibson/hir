@@ -18,9 +18,9 @@ class OrganizationForm(ModelForm):
         print >>sys.stderr, "organization form up top meta"
         model = Organization
         # the form displays the field in the order of this array.
-        # 'title' needs to be populated as long as this is a mezzanine 'page'
+        # maybe use the pages_page.title for our name
         fields=['name', 'website', 'street_address', 'city', 'state',
-                'postal_code', 'country', 'email', 'phone', ]
+                'postal_code', 'country', 'email', 'phone', 'about' ]
                 #'postal_code', 'country', 'email', 'phone', 'about']
 
         print >>sys.stderr,"before widgets"
@@ -35,7 +35,7 @@ class OrganizationForm(ModelForm):
         # these labels are not being used. The help_text from models is being
         # used.
         labels= {
-            'title':'title',
+            'title':'Organization Name',
             'name':'Organzation Name',
             'website':'Website',
             'street_address':'Street Address',
@@ -79,8 +79,12 @@ def organization_form(request, page):
         form = OrganizationForm(request.POST)
         if form.is_valid():
             # process form, like save data
+            # hmmm...how do I do this? I want the pages_page.title
+            # to be the name field. oh well.
+            #form.cleaned_data['title'] = form.cleaned_data['name']
             form.save()
             redirect = request.path + "?submitted=true"
+            redirect = "/"
             return HttpResponseRedirect(redirect)
     return {"form": form}
 
