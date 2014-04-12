@@ -18,7 +18,8 @@ class OrganizationForm(ModelForm):
         print >>sys.stderr, "organization form up top meta"
         model = Organization
         # the form displays the field in the order of this array.
-        fields=['title','name', 'website', 'street_address', 'city', 'state',
+        # 'title' needs to be populated as long as this is a mezzanine 'page'
+        fields=['name', 'website', 'street_address', 'city', 'state',
                 'postal_code', 'country', 'email', 'phone', ]
                 #'postal_code', 'country', 'email', 'phone', 'about']
 

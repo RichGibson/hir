@@ -1,4 +1,31 @@
 
+Right now:
+Sat 11:18
+
+Status:  Add your organization goes into hir_organization.
+
+
+Issue:
+-successful add of an organization doesn't return to a reasonable place.
+but it does add...so just live with it?
+
+1. Make list organizations work
+fuck. It does work right now on my machine. push code and pray?
+2. Move hir_organization to a Models.model, move the page_processor code to a view, change
+the urls.py , move add-organization from templates/pages to pages probably
+
+
+.....
+Why don't my orgizations show up on my local machine?
+Do they show up on pistonbot?
+
+Mezzanine page processors make my head hurt a lot.
+They appear to be silently ignored at (random?) times.
+
+Now my add your organization form is being ignored. WTF?
+
+I need to strip this out
+
 
 Tue April 8th, tasks.
 -
@@ -8,6 +35,11 @@ Thur 10th at 12:00
 
 
 Sat 12th at 12:00
+-make sure you can add/show list and individual organizations 
+-make sure you can add/show list and individual residencies
+
+
+
 Tue 15th at 12:00
 
 -"we need to get this going because the Bejeing people have been on hold"
