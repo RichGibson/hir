@@ -26,7 +26,7 @@ class OrganizationForm(ModelForm):
         print >>sys.stderr,"before widgets"
         widgets = {
             'title': Textarea(attrs={'size':'100'}),
-            'name': Textarea(attrs={'size':'10'}),
+            'name': Textarea(attrs={'size':'1', 'rows':'1'}),
             'about': Textarea(attrs={'cols':'150', 'rows':'8'}),
         } 
         print >>sys.stderr,"widgets",widgets
