@@ -40,7 +40,7 @@ class RequiredSkeleton(models.Model):
                 help_text="sort order, Required items are displayed in this order.")
 
 
-class Organization(Page, RichText):
+class Organization(models.Model):
     name = models.CharField(max_length=200, help_text="The name of your organization",editable=True)
     website = models.CharField(max_length=100, blank=True, null=True,help_text="")
     street_address = models.CharField(max_length=200, blank=True, null=True,help_text="")
@@ -55,7 +55,7 @@ class Organization(Page, RichText):
 
 
 
-class Residency(Page, RichText):
+class Residency(models.Model):
     organization = models.ForeignKey("Organization", default=17)
     # we get 'title' from the base Page, to use as a summary of the opportunity for list views.
     about = models.TextField(blank=True, null=True)
