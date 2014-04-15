@@ -16,9 +16,12 @@ fuck. It does work right now on my machine. push code and pray?
 2. Move hir_organization to a Models.model, move the page_processor code to a view, change
 the urls.py , move add-organization from templates/pages to pages probably
 
-0. make a branch
-a. change model for org first
-b. db sync
+done 0. make  branchs - 
+done a. change model for org first (did both)
+done b. db sync
+
+Whoops! Need to remove the pages from mezzanine admin before I remove the tables?
+
 c. move form and code from page_processors to views.
 d. remove from 'pages' database
 e. add endpoints to urls.py
