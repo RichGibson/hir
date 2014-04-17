@@ -1,3 +1,11 @@
+list for slug {{slug}}
+<br>
+<hr>rv<br>{{ rv }}
 {% for entry in entrylist %}
-    {{entry.value}}<br>
+    <hr>Entry:
+    {{entry}}<br>
+
+    {% for value in entry %}
+        Value: {{value}}<br>
+    {% endfor %}
 {% endfor %}

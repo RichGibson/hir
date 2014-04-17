@@ -17,7 +17,7 @@ def return_formentry(slug):
         results.  """
 
     # A 'form' is the description and fields for a form.
-    print >>sys.stderr,"slug:%r" % slug
+    print >>sys.stderr,"formentry_work slug:%r" % slug
     single_form = Form.objects.get(slug=slug)
 
     # A 'form entry' represents an instance of filling out a form.

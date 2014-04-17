@@ -17,5 +17,9 @@ from .models import OfferSkeleton,RequiredSkeleton
 #admin.site.register(OfferSkeleton, OfferSkeletonAdmin)
 #admin.site.register(RequiredSkeleton, RequiredSkeletonAdmin)
 
-admin.site.register(Organization, PageAdmin)
-admin.site.register(Residency, PageAdmin)
+# move from mezzanine to straight django for these
+#admin.site.register(Organization, PageAdmin)
+#admin.site.register(Residency, PageAdmin)
+
+admin.site.register(Organization)
+admin.site.register(Residency)

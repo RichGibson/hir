@@ -20,11 +20,24 @@ done 0. make  branchs -
 done a. change model for org first (did both)
 done b. db sync
 
-Whoops! Need to remove the pages from mezzanine admin before I remove the tables?
+fixed Whoops! Need to remove the pages from mezzanine admin before I remove the tables?
+(and the org/res models from admin.py)
 
 c. move form and code from page_processors to views.
+
+c.1: copy (some of) Form stuff to 'myform?' no...just get those tables back.
+
+forms_form
+forms_field
+forms_formentry
+forms_fieldentry
+
+Fuck.
+Schemas are puked, no slug-it is in the pages_page model, forms_form has 'page_ptr_id'
+ick.
+
 d. remove from 'pages' database
-e. add endpoints to urls.py
+e. add endpoints to urls.py (where is mezzanine.urls?)
 -add, list, show
 f. maybe move the templates from templates/pages
 

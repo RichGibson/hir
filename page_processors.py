@@ -1,4 +1,4 @@
-#from django import forms
+from django import forms
 #from django.http import HttpResponseRedirect
 
 import sys
@@ -114,22 +114,24 @@ def show_residency(request,page):
 
 
 @processor_for('add-a-residency-opportunity')
-def show_organization(request,page):
+def show_residency(request,page):
     orgslug=request.GET.get('org',None)
     print >>sys.stderr, "add-a-residency-opportunity org:%r" % orgslug
     return
 
 
 @processor_for('show-organization')
-def show_organization(request,page):
+def show_organization(request,page,id=None):
     # this is where we could do the offer/requires formatting, but 
     # I am doing it in a template_tag. 
     #for res in reslist:
     #    pass    
-    print >>sys.stderr,"show-organization"
+    id=request.GET.get('id',1)
+    print >>sys.stderr,"show-organization page", page
+    print >>sys.stderr,"show-organization id", id
 
-    slug=request.GET.get('org',None)
-    org=Organization.objects.filter(slug=slug)[0]
+    #slug=request.GET.get('org',None)
+    org=Organization.objects.filter(id=id)[0]
 
     print >>sys.stderr, "org?"
     print >>sys.stderr, org.name

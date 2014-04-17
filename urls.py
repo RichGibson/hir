@@ -6,11 +6,6 @@ from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
 
-# my page_processors worked fine, then stopped. This magic
-# was suggested. And appears to work.
-from mezzanine.pages import page_processors
-page_processors.autodiscover()
-
 admin.autodiscover()
 
 # Add the urlpatterns for any custom Django applications here.
@@ -25,9 +20,6 @@ urlpatterns = i18n_patterns("",
 
 
 urlpatterns += patterns('',
-
-
-
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 
@@ -39,10 +31,12 @@ urlpatterns += patterns('',
     # one out.
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
 
-    url(r'^list/(.*[^/])','hir.views.list', name='list'),
+    url(r'^list/(.*[^/])?','hir.views.list', name='list'),
     url(r'^rawlist/(.*[^/])','hir.views.rawlist', name='list'),
 
-    #url(r'^show/organization/(.*[^/])?','hir.views.showorganization', name='list'),
+    #url(r'^show-organization',"mezzanine.pages.views.page", {"slug":"/show-organization"}, name='home'),
+    # url(r'^show-organization/(.*[^/])?',"mezzanine.pages.views.page", {"slug":"/show-organization"}, name='home'),
+    # url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
 
 
 
@@ -82,7 +76,9 @@ urlpatterns += patterns('',
     # ``mezzanine.urls``, go right ahead and take the parts you want
     # from it, and use them directly below instead of using
     # ``mezzanine.urls``.
+    
     ("^", include("mezzanine.urls")),
+
 
     # MOUNTING MEZZANINE UNDER A PREFIX
     # ---------------------------------
