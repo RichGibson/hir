@@ -21,12 +21,18 @@
 
 {% block main %}
 
+<table>
+<th>
+<td>Organization Name</td>
+<td>City</td>
+<td>Country</td>
+</th>
 {% for org in orglist %}
-    <a href="/show-organization?id={{org.id}}">{{org.name}}</a> 
-    : 
-    {{org.city}},
-    {{org.country}}
-    <br>
+    <tr>
+    <td> <a href="/show-organization?id={{org.id}}">{{org.name}}</a> </td>
+    <td>{{org.city}}</td>
+    <td> {{org.country}}</td>
+    </tr>
 {% endfor %}
 
 {% endblock %}

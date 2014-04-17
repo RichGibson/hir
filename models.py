@@ -1,5 +1,6 @@
 
 from django.db import models
+from django.contrib.auth.models import User
 from mezzanine.pages.models import Page, RichText
 
 # The members of Page will be inherited by the Author model, such
@@ -42,6 +43,7 @@ class RequiredSkeleton(models.Model):
 
 class Organization(models.Model):
     name = models.CharField(max_length=200, help_text="The name of your organization",editable=True)
+    user = models.ForeignKey(User)
     website = models.CharField(max_length=100, blank=True, null=True,help_text="")
     street_address = models.CharField(max_length=200, blank=True, null=True,help_text="")
     city = models.CharField(max_length=30, blank=True, null=True,help_text="")

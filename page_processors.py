@@ -4,7 +4,7 @@ from django import forms
 import sys
 
 from django import forms
-from django.forms import ModelForm, Textarea
+from django.forms import ModelForm, Textarea, HiddenInput, CharField
 
 from django.http import HttpResponseRedirect
 
@@ -20,7 +20,7 @@ class OrganizationForm(ModelForm):
         # the form displays the field in the order of this array.
         # maybe use the pages_page.title for our name
         fields=['name', 'website', 'street_address', 'city', 'state',
-                'postal_code', 'country', 'email', 'phone', 'about' ]
+                'postal_code', 'country', 'email', 'phone', 'about']
                 #'postal_code', 'country', 'email', 'phone', 'about']
 
         print >>sys.stderr,"before widgets"
@@ -28,7 +28,9 @@ class OrganizationForm(ModelForm):
             'title': Textarea(attrs={'size':'100'}),
             'name': Textarea(attrs={'size':'1', 'rows':'1'}),
             'about': Textarea(attrs={'cols':'150', 'rows':'8'}),
+            #'user': HiddenInput(),
         } 
+        #user = forms.CharField(widget=forms.HiddenInput())
         print >>sys.stderr,"widgets",widgets
         # i have seen examples with the numbers in quotes, and not in quotes.
         #'about': Textarea(attrs={'cols':'150', 'rows':'8'}),
@@ -74,18 +76,41 @@ def residency_form(request, page):
 def organization_form(request, page):
     print >>sys.stderr, "in organization_form"
     form = OrganizationForm()
+    current_user = request.user
+    #form.user = current_user.id
+    #print >>sys.stderr, "form.user", form.user
+    
+    #form.fields['User'].initial = current_user
     print >>sys.stderr, "after form=in organization_form"
+    print >>sys.stderr, "current_user", current_user
     if request.method == "POST":
-        form = OrganizationForm(request.POST)
+        print >>sys.stderr, "this is a post"
+        post = request.POST.copy()
+        post['user'] = current_user.id
+        form = OrganizationForm(post, current_user)
+        #form = OrganizationForm(request.POST)
+        #form['user'] = current_user
+        print >>sys.stderr, "we have a form: "
+        #newform = request.POST.copy()
+        #newform.data['user'] = current_user
+        print >>sys.stderr, "form.data user: ", form.data['user']
         if form.is_valid():
+            print >>sys.stderr, "form is valid"
             # process form, like save data
             # hmmm...how do I do this? I want the pages_page.title
             # to be the name field. oh well.
             #form.cleaned_data['title'] = form.cleaned_data['name']
-            form.save()
+            form.cleaned_data['user_id'] = current_user.id
+            #print >>sys.stderr, "before save form.user", form.user
+            form.data['user'] = current_user.id
+            print >>sys.stderr, "before save form.data:", form.data
+            org = form.save(commit=False)
+            org.user = current_user
+            org.save()
             redirect = request.path + "?submitted=true"
             redirect = "/"
             return HttpResponseRedirect(redirect)
+        print >>sys.stderr, "form is not valid"
     return {"form": form}
 
 
